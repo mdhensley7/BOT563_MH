@@ -1,0 +1,51 @@
+LOCUS       MZ668007                 331 bp    DNA     linear   PLN 13-SEP-2021
+DEFINITION  Amanita sp. 'sp-44' voucher S.D. Russell MycoMap # 908 internal
+            transcribed spacer 1, partial sequence; 5.8S ribosomal RNA gene,
+            complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MZ668007
+VERSION     MZ668007.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'sp-44'
+  ORGANISM  Amanita sp. 'sp-44'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 331)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 331)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..331
+                     /organism="Amanita sp. 'sp-44'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap # 908"
+                     /db_xref="taxon:2541717"
+                     /geo_loc_name="USA: Indiana, Jasper County, Wolcott,
+                     Fisher Oak Savannah Nature Preserve"
+                     /collection_date="19-Aug-2016"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     MycoMap.com #908; MyCoPortal.org #4386690;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>331
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 atatattatt tatatgaata caactttcaa caatggatct cttggctctc gcatcgatga
+       61 agaacacagc gaaatgtgat aagtaatgtg aattgcagaa tccagtgaat catcgaatct
+      121 ttgaacgcat cttgcgctcc ttggcattcc gaggagcatg cctgtttgag tgtcattaaa
+      181 ctatcaaaac acttttcttg aaagtgtttt ggactttggg agtattgtgc tggtttgttt
+      241 gagccagctc tcctcaaaag cattagcttt ggagactatc agtgtgataa tttgtttgca
+      301 ctgggttctc cttttaaatg cccccttgac c
+//
+

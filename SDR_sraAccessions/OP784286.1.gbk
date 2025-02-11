@@ -1,0 +1,59 @@
+LOCUS       OP784286                 678 bp    DNA     linear   PLN 12-NOV-2022
+DEFINITION  Amanita sp. 'cinereoconia-FL01' isolate S.D. Russell ONT SJ
+            iNaturalist # 125830298 small subunit ribosomal RNA gene, partial
+            sequence; internal transcribed spacer 1, 5.8S ribosomal RNA gene,
+            and internal transcribed spacer 2, complete sequence; and large
+            subunit ribosomal RNA gene, partial sequence.
+ACCESSION   OP784286
+VERSION     OP784286.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'cinereoconia-FL01'
+  ORGANISM  Amanita sp. 'cinereoconia-FL01'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 678)
+  AUTHORS   Russell,S.D. and Jacob,S.
+  TITLE     Nanopore Sequencing Run 9
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 678)
+  AUTHORS   Russell,S.D. and Jacob,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-NOV-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: NGSpeciesID v. 0.1.2.1
+            Sequencing Technology :: Oxford Nanopore MinION; Flongle 9.4.1
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..678
+                     /organism="Amanita sp. 'cinereoconia-FL01'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell ONT SJ iNaturalist # 125830298"
+                     /db_xref="taxon:2993143"
+                     /geo_loc_name="USA: Florida, Alachua County, Gainesville"
+                     /collection_date="11-Jul-2022"
+                     /collected_by="Sigrid Jakob"
+                     /identified_by="Stephen D. Russell"
+                     /note="ONT MinION nanopore sequencing; Flongle 9.4.1;
+                     SQK-LSK112; iNaturalist.org #125830298;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>678
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 gtcgtaacaa ggtttccgta ggtgaacctg cggaaggatc attattgaat tgaaaatggc
+       61 ttgaggctgt agctggctct tgggagcatg tgcacgtctc ttgcctattt gcttcatcca
+      121 cctgtgcaca attgtagact acttgggatt ggaggggcct ttaccagcct cttgctgacg
+      181 aagtccaagt gtctatgtta atttttaaca catacaattg catgtctaga gaatgtagtt
+      241 ttaatgcagc tctgatttag agcatttgaa caaaaatata tataactttc aacaatggat
+      301 ctcttggctc tcgcatcgat gaagaacgca gcgaaatgcg ataagtaatg tgaattgcag
+      361 aattcagtga atcatcgaat ctttgaacgc accttgcgct ccttggtact ctgaggagca
+      421 tacctgtttg agtgtcatta aaactctcaa aacctacatt tgattatgtg gtggttttgg
+      481 actatgggat tgctggttct cgttgtggac tagctctcct gaaatgcatg agtggggtta
+      541 atgcaataat atgctctatg gtgtgataag atgggaatgt caacaccctt tgagttgttg
+      601 tatggcctgc tatctaacag tccgttggac aaattgacaa agttgacctc agatcaggta
+      661 ggattacccg ctgaactt
+//
+

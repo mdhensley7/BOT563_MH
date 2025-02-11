@@ -1,0 +1,56 @@
+LOCUS       MZ668051                 623 bp    DNA     linear   PLN 03-AUG-2021
+DEFINITION  Amanita sp. 'flavoconia-03' voucher S.D. Russell MycoMap # 5988
+            internal transcribed spacer 1, partial sequence; 5.8S ribosomal RNA
+            gene, complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MZ668051
+VERSION     MZ668051.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'flavoconia-03'
+  ORGANISM  Amanita sp. 'flavoconia-03'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 623)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 623)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..623
+                     /organism="Amanita sp. 'flavoconia-03'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap # 5988"
+                     /db_xref="taxon:2863027"
+                     /geo_loc_name="USA: Indiana, Parke County, Waveland,
+                     Shades State Park"
+                     /collection_date="02-Jul-2017"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     MycoMap.com #5988; MyCoPortal.org #4922898;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>623
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 ctgcggaagg atcattactg agcgaaatgg gtggcaaggc tgtcgctggc tcaaatgagc
+       61 atgtgcacgt cttttgctgc ttgcttcatt ctcttttcca cctgtgcact ctttgtagac
+      121 actcgggatg ggagagaggt tggcattgat ggttaacctc tcttgatatt gaaaagtctg
+      181 ggtgtttatg tattttttga catacacggt tgaatgtcta tagaatgaaa tgtaggcttt
+      241 tgtcagcctt taaatgataa aatacaactt tcaacaacgg atctcttggc tctcgcatcg
+      301 atgaagaacg cagcgaaatg cgataagtaa tgtgaattgc agaattcagt gaatcatcga
+      361 atctttgaac gcatcttgcg ctccttggta ttccgaggag catgcctgtt tgagtgtcat
+      421 taaatatctc aaaaagtttg tgcttttttg gcataagatt ttttggacat tgggagttgc
+      481 cggctgctga taaaagtggt gggctcttct gaaaagcatt agttgaggag ctttgcactc
+      541 tattggtgtg atagactatc tatgccagga gatgcttcat gatcctctgc catctaactg
+      601 tctttattag acaacatgat aaa
+//
+

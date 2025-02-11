@@ -1,0 +1,55 @@
+LOCUS       MZ667977                 599 bp    DNA     linear   PLN 03-AUG-2021
+DEFINITION  Amanita muscaria var. guessowii voucher S.D. Russell iNaturalist #
+            8560670 internal transcribed spacer 1, partial sequence; 5.8S
+            ribosomal RNA gene, complete sequence; and internal transcribed
+            spacer 2, partial sequence.
+ACCESSION   MZ667977
+VERSION     MZ667977.1
+KEYWORDS    .
+SOURCE      Amanita muscaria var. guessowii
+  ORGANISM  Amanita muscaria var. guessowii
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 599)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 599)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..599
+                     /organism="Amanita muscaria var. guessowii"
+                     /mol_type="genomic DNA"
+                     /variety="guessowii"
+                     /specimen_voucher="S.D. Russell iNaturalist # 8560670"
+                     /db_xref="taxon:235531"
+                     /geo_loc_name="USA: Indiana, Fulton County, Macy"
+                     /collection_date="26-Oct-2017"
+                     /collected_by="iNaturalist.org User, dcchris"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     iNaturalist.org #8560670; MyCoPortal.org #5103543;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>599
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 tgcggaagga tcattattga aagaaacctc aggcaggggg aggtggttgt agctggccct
+       61 taggggcatg tgcacaccgt gtctctcttg cttgtttctt cattctctcc acttgtgcac
+      121 tgcttgtagg cagccctggc attgttcagg ttgtctatga ttttctttac atacatgaac
+      181 acttgttgta cagaatgtga taaaaaatag taatacaact ttcaacaacg gatctcttgg
+      241 ctctcgcatc gatgaagaac gcagcgaaat gcgataagta atgtgaattg cagaattcag
+      301 tgaatcatcg aatctttgaa cgcatcttgc gctccttggt attccgagga gcatgcctgt
+      361 ttgagtgtca ttaaattctc tcaaagcata cacttgagtg tgtgttttgg attgtgggag
+      421 tgtctgctgg ctttatgagc cagctctcct gaaagacatt agctttgggg gggaggtgcc
+      481 aagtcacttc tgcctttcca ttggtgtgat agatgaatta acttatctac gccaggaaag
+      541 caggctgcag gtgatgcact gtgatctctc tctgctctct aattgacatt tgtctgata
+//
+

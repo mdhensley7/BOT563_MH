@@ -1,0 +1,52 @@
+LOCUS       ON209233                 339 bp    DNA     linear   PLN 16-APR-2022
+DEFINITION  Amanita sp. 'IN08' isolate S.D. Russell Mushroom Observer # 212421
+            internal transcribed spacer 1, partial sequence; 5.8S ribosomal RNA
+            gene, complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   ON209233
+VERSION     ON209233.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'IN08'
+  ORGANISM  Amanita sp. 'IN08'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 339)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Indiana Forest Alliance Ecoblitz 2015
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 339)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-APR-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..339
+                     /organism="Amanita sp. 'IN08'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell Mushroom Observer # 212421"
+                     /specimen_voucher="PUL:PUL00031689"
+                     /db_xref="taxon:2934126"
+                     /geo_loc_name="USA: Indiana, Morgan County, Martinsville,
+                     Morgan-Monroe State Forest"
+                     /collection_date="09-Aug-2015"
+                     /collected_by="Russell, Stephen D"
+                     /note="Mycoflora of Indiana: IFA Ecoblitz 2015;
+                     MushroomObserver.org #212421; MyCoPortal.org #4386737;
+                     [BankIt_ITS_wizard]; [rRNAITS_notfound];
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>339
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 atcattgaaa tatttgattt tgtaataaat tgacaacttt caacaacgga tctcttggtt
+       61 ctcgcatcga tgaagaacac agcgaaatgt gataagtaat gtgaattgca gaattcagtg
+      121 aatcatcgaa tctttgaatg catcttgcgc tccttggtat tccgaggagc atgcctgttt
+      181 gagtgtcata aaacttatca aaacattctt gtttgagtgc ttttggattg tgggagtgct
+      241 agctagatag ttagctctcc tgaaaaacat attggcttga aaagacaatc ggtgtgataa
+      301 tccttatgca ccttacaagt ctctcagccc cttttttat
+//
+

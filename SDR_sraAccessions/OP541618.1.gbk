@@ -1,0 +1,53 @@
+LOCUS       OP541618                 539 bp    DNA     linear   PLN 02-OCT-2022
+DEFINITION  Amanita sp. 'T48' isolate S.D. Russell NAMA2018 MS iNaturalist
+            13903848 internal transcribed spacer 1, partial sequence; 5.8S
+            ribosomal RNA gene, complete sequence; and internal transcribed
+            spacer 2, partial sequence.
+ACCESSION   OP541618
+VERSION     OP541618.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'T48'
+  ORGANISM  Amanita sp. 'T48'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 539)
+  AUTHORS   Russell,S.D.
+  TITLE     NAMA 2018 Regional Foray - Pickens, MS
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 539)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-SEP-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..539
+                     /organism="Amanita sp. 'T48'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell NAMA2018 MS iNaturalist 13903848"
+                     /db_xref="taxon:2981916"
+                     /geo_loc_name="USA: Mississippi, North Gray Center Road"
+                     /collection_date="29-Jun-2018"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="NAMA 2018 Regional Foray - Canton, MS;
+                     iNaturalist.org 13903848;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>539
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 aggtgacctg cggaaggatc attatcgaat cgaacttttg gctggggtgc ttgttgtgct
+       61 ggtcctttgg ggcactgtga acatgagtcc tctggtcatt ttgtttgttc tttttccacc
+      121 tgtgcactgc ctgtagacct ttcgtgtcta tgacatgttt atacaaacac acacrtgttg
+      181 tattggttgg cgtcttatat atataataat aaataataca actttcaaca atggatctct
+      241 tggctctcgc atcgatgaag aacgcagcga aatgtgataa gtaatgtgaa ttgcagaatc
+      301 cagtgaatca tcgaatcttt gaacgcatct tgcgctcctt ggcattctga ggagcatgcc
+      361 tgtttgagtg tcattaaact atcgaaacac tttttcctmt ggtgttccgg actttgggag
+      421 cgcttttgct ggtctttgcc agctctccta aaaagcatct agtcggcaga caaattcagc
+      481 gtgataactt tcttacgctg tctctgctcg ttgaaggttc tttaaattga cctcaaatc
+//
+

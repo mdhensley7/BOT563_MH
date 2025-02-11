@@ -1,0 +1,52 @@
+LOCUS       MZ668201                 425 bp    DNA     linear   PLN 05-JAN-2022
+DEFINITION  Amanita sp. 'IN20' voucher S.D. Russell iNaturalist # 29534305
+            internal transcribed spacer 1, partial sequence; 5.8S ribosomal RNA
+            gene, complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MZ668201
+VERSION     MZ668201.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'IN20'
+  ORGANISM  Amanita sp. 'IN20'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 425)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 425)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..425
+                     /organism="Amanita sp. 'IN20'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell iNaturalist # 29534305"
+                     /db_xref="taxon:2863046"
+                     /geo_loc_name="USA: Indiana, Orange County"
+                     /collection_date="24-Jul-2019"
+                     /collected_by="iNaturalist.org User, roundabout1812"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     iNaturalist.org #29534305;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>425
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 ttttttttct attacactta atgagaaatt ttgaatgtgg tttattatga taaatacaac
+       61 tttcaacaat ggatctcttg gctctcgcat cgatgaagaa cgcagcgaaa tgcgataagt
+      121 aatgtgaatt gcagaattca gtgaatcatc gaatgtttga acgcatcttg cgctccttgg
+      181 tattccttgg agcatgcctg tttgagtgtc atttaatatt gtcaagacta attctgagta
+      241 tgatttcgga agatgttttg gaatttgggg gttgcagatt cattttattt gaactagctc
+      301 tcctgaaatg gattagcaaa agggcattat gggccatttt attggtgtga taatgtttat
+      361 tgatccacca gaaaggggga acatgtgcac atgmattttg ctgatataaa aaagattaag
+      421 aaagt
+//
+

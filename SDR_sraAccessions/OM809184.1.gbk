@@ -1,0 +1,58 @@
+LOCUS       OM809184                 670 bp    DNA     linear   PLN 01-MAR-2022
+DEFINITION  Amanita sp. 'americitrina' isolate S.D. Russell iNaturalist #
+            91350402 small subunit ribosomal RNA gene, partial sequence;
+            internal transcribed spacer 1 and 5.8S ribosomal RNA gene, complete
+            sequence; and internal transcribed spacer 2, partial sequence.
+ACCESSION   OM809184
+VERSION     OM809184.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'americitrina'
+  ORGANISM  Amanita sp. 'americitrina'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 670)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Online Summer Foray 2021
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 670)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-FEB-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..670
+                     /organism="Amanita sp. 'americitrina'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell iNaturalist # 91350402"
+                     /specimen_voucher="(11)"
+                     /db_xref="taxon:2742500"
+                     /geo_loc_name="USA: Indiana, Porter County, Chesterton"
+                     /collection_date="14-Aug-2021"
+                     /collected_by="John Plischke"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana: Summer Foray 2021;
+                     iNaturalist.org #91350402;
+                     PCR_primers=rev_name: ITS4"
+     misc_RNA        <1..>670
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, and internal
+                     transcribed spacer 2"
+ORIGIN      
+        1 agaggaagta aaagtcgtaa caaggtttcc gtaggtgaac ctgcggaagg atcattattg
+       61 aacgacaatg ggtggcaaag actgttgctg gctaatgagc atgtgcacgt ttctgctgct
+      121 tatttcattc atttttcctc ctgtgcacgt tttgtagaca cttaggaatg agaggttggt
+      181 tgtaatgatt gacttcttgc gatcagtctg ggtgtctatg gcatttttat aaacactgtt
+      241 gcatgtatat agaatgagat tgtagggttt ttttaaaaca aaagccttta aatgataaag
+      301 tacaactttc aacaacggat ctcttggctc tcgcatcgat gaagaacgca gcgaaatgcg
+      361 ataagtaatg tgaattgcag aattcagtga atcatcgaat ctttgaacgc atcttgcgct
+      421 ccttggtatt ctgaggagca tgcctgtttg agtgtcatta aagtatctca aaagttctgt
+      481 tgcactatgc tccaagaact tttggacatt gggagttgct ggccacttat aaagtaagtg
+      541 gtgggctctt ctgaaaagca ttagttgagg aggttttgca ctctattggt atgatagact
+      601 atctatgcca ggagaagcat tatgaagccc tctgccatct aatggtcctt aatggacaag
+      661 atgataaact
+//
+

@@ -1,0 +1,56 @@
+LOCUS       OP541698                 591 bp    DNA     linear   PLN 02-OCT-2022
+DEFINITION  Amanita sp. 'S14' isolate S.D. Russell NAMA2018 MS iNaturalist
+            13936523 small subunit ribosomal RNA gene, partial sequence;
+            internal transcribed spacer 1, 5.8S ribosomal RNA gene, and
+            internal transcribed spacer 2, complete sequence; and large subunit
+            ribosomal RNA gene, partial sequence.
+ACCESSION   OP541698
+VERSION     OP541698.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'S14'
+  ORGANISM  Amanita sp. 'S14'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 591)
+  AUTHORS   Russell,S.D.
+  TITLE     NAMA 2018 Regional Foray - Pickens, MS
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 591)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-SEP-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..591
+                     /organism="Amanita sp. 'S14'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell NAMA2018 MS iNaturalist 13936523"
+                     /db_xref="taxon:2981914"
+                     /geo_loc_name="USA: Mississippi, North Gray Center Road"
+                     /collection_date="30-Jun-2018"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="NAMA 2018 Regional Foray - Canton, MS;
+                     iNaturalist.org 13936523;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>591
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 tagaggaagt aaaagtcgta acaaggtttc cgtaggtgaa cctgcggaag gatcattatt
+       61 gaatgaaact tctggctgga tgttgttgtg ctggcccttt tgggggcaat gtgcacacct
+      121 ctggccatct gtttcttctg ttccacctgt gcactgcctg tagacactct gtgtctatga
+      181 tatgttacac acacacatat agatagttag acatatatat tatatatata atacaacttt
+      241 caacaatgga tctcttggct ctcgcatcga tgaagaacac agcgaaatgt gataagtaat
+      301 gtgaattgca gaatccagtg aatcatcgaa tctttgaacg catcttgcgc tccttggcat
+      361 tccaaggagc atgcctgttt gagtgtcgtt aaactatcaa aacacttttc ttgggtgttt
+      421 tggactttgg gagtgtcttg ctggtctgtt tcagccagct ctcctcaaaa gcattagctt
+      481 tgaagaccat cagtgtgata atttctttac gctgacttga gtgtctcagc ttaaatatcc
+      541 tacccccttt gacctcaaat caggtaggac tacccgctga acttaagcat a
+//
+

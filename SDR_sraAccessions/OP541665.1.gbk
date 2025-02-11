@@ -1,0 +1,56 @@
+LOCUS       OP541665                 617 bp    DNA     linear   PLN 02-OCT-2022
+DEFINITION  Amanita canescens isolate S.D. Russell NAMA2018 MS iNaturalist
+            14059137 small subunit ribosomal RNA gene, partial sequence;
+            internal transcribed spacer 1 and 5.8S ribosomal RNA gene, complete
+            sequence; and internal transcribed spacer 2, partial sequence.
+ACCESSION   OP541665
+VERSION     OP541665.1
+KEYWORDS    .
+SOURCE      Amanita canescens
+  ORGANISM  Amanita canescens
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 617)
+  AUTHORS   Russell,S.D.
+  TITLE     NAMA 2018 Regional Foray - Pickens, MS
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 617)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-SEP-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..617
+                     /organism="Amanita canescens"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell NAMA2018 MS iNaturalist 14059137"
+                     /db_xref="taxon:2517780"
+                     /geo_loc_name="USA: Mississippi, Oliver Lane"
+                     /collection_date="30-Jun-2018"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="NAMA 2018 Regional Foray - Canton, MS;
+                     iNaturalist.org 14059137;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>617
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, and internal
+                     transcribed spacer 2"
+ORIGIN      
+        1 taggtgaacc tgcggaagga tcattacaga acgaaaaggt ggcgagactg tcgctggctt
+       61 gaatgagcat gtgcacgtct tgttgctcct tatttcattc tcttttccac ctgtgcattt
+      121 tttgtagaca ttcgggatgg agaggttggt ttctgacctc ttgaaaaagt ctggrtgcct
+      181 atgcattttc tatatacaca gttgcatgtc tatagaatga gattataggc ttgtcagcct
+      241 ttaaatgata aaatataact ttcaacaacg gatctcttgg ctctcgcatc gatgaagaac
+      301 gcagcgaaat gcgataagta atgtgaattg cagaattcag tgaatcatcg aatctttgaa
+      361 cgcatcttgc gctccttggt attccgagga gcatgcctgt ttgagtgtca tttaaatatc
+      421 tcaaaaagct tatgctttgg cgtaggaatt ttggacattg gaagttgctg gccactaatg
+      481 aaaggtggta ggctcttctg aaaagcatta gttgaggagc cttttgcact ctattggtgt
+      541 gatagactat ctatgccagg agatgctttt atgaaccctc tgctgtctaa ctgtctttat
+      601 ttggacaaca tgataaa
+//
+

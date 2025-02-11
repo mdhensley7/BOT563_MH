@@ -1,0 +1,58 @@
+LOCUS       MZ667980                 640 bp    DNA     linear   PLN 03-AUG-2021
+DEFINITION  Amanita muscaria var. guessowii voucher S.D. Russell iNaturalist #
+            8768743 small subunit ribosomal RNA gene, partial sequence;
+            internal transcribed spacer 1 and 5.8S ribosomal RNA gene, complete
+            sequence; and internal transcribed spacer 2, partial sequence.
+ACCESSION   MZ667980
+VERSION     MZ667980.1
+KEYWORDS    .
+SOURCE      Amanita muscaria var. guessowii
+  ORGANISM  Amanita muscaria var. guessowii
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 640)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 640)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..640
+                     /organism="Amanita muscaria var. guessowii"
+                     /mol_type="genomic DNA"
+                     /variety="guessowii"
+                     /specimen_voucher="S.D. Russell iNaturalist # 8768743"
+                     /db_xref="taxon:235531"
+                     /geo_loc_name="USA: Indiana, St. Joseph County, South
+                     Bend"
+                     /collection_date="26-Oct-2017"
+                     /collected_by="iNaturalist.org User, mollybmoon"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     iNaturalist.org #8768743; MyCoPortal.org #5103719;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>640
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, and internal
+                     transcribed spacer 2"
+ORIGIN      
+        1 gtaacaaggt ttccgtaggt gaacctgcgg aaggatcatt attgaaagaa acctcaggca
+       61 gggggaggtg gttgtagctg gcccttaggg gcatgtgcac accgtgtctc tcttgcttgt
+      121 ttcttcattc tctccacttg tgcactgctt gtaggcagcc ctggcattgt tcaggttgtc
+      181 tatgattttc tttacataca tgaacacttg ttgtacagaa tgtgataaaa aatagtaata
+      241 caactttcaa caacggatct cttggctctc gcatcgatga agaacgcagc gaaatgcgat
+      301 aagtaatgtg aattgcagaa ttcagtgaat catcgaatct ttgaacgcat cttgcgctcc
+      361 ttggtattcc gaggagcatg cctgtttgag tgtcattaaa ttctctcaaa gcatacactt
+      421 gagtgtgtgt tttggattgt gggagtgtct gctggcttta tgagccagct ctcctgaaag
+      481 acattagctt tgggggggag gtgccaagtc acttctgcct ttccattggt gtgatagatg
+      541 aattaactta tctacgccag gaaagcaggc tgcaggtgat gcactgtgat ctctctctgc
+      601 tctctaattg acatttgtct gataacttga cctcaaatca
+//
+

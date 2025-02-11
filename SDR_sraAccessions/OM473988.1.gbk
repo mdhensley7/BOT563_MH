@@ -1,0 +1,45 @@
+LOCUS       OM473988                 206 bp    DNA     linear   PLN 07-FEB-2022
+DEFINITION  Amanita magnivelaris isolate S.D. Russell iNaturalist # 57080418
+            internal transcribed spacer region, partial sequence.
+ACCESSION   OM473988
+VERSION     OM473988.1
+KEYWORDS    .
+SOURCE      Amanita magnivelaris
+  ORGANISM  Amanita magnivelaris
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 206)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Online Summer Foray 2020
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 206)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JAN-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..206
+                     /organism="Amanita magnivelaris"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell iNaturalist # 57080418"
+                     /db_xref="taxon:248095"
+                     /geo_loc_name="USA: Indiana, Spencer County, Lincoln City"
+                     /collection_date="20-Aug-2020"
+                     /collected_by="Garrett Taylor"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana: Summer Foray 2020;
+                     iNaturalist.org #57080418;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>206
+                     /note="contains internal transcribed spacer region"
+ORIGIN      
+        1 acctgcggaa ggatcattat tgaaataaat aaaaaaaagc ttgaggctgt tgctggtgac
+       61 tagtatagta ccctatattg gacacatgtg cacgtctctt gcttatttga taactatttc
+      121 cacctgtgca tgatgtgtag atgcctagga ttgagaagca agagtttttg gcttttgttt
+      181 tataaatcta ggtgtctatg tttttt
+//
+

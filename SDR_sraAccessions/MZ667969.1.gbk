@@ -1,0 +1,59 @@
+LOCUS       MZ667969                 655 bp    DNA     linear   PLN 03-AUG-2021
+DEFINITION  Amanita bisporigera voucher S.D. Russell Mushroom Observer # 215424
+            small subunit ribosomal RNA gene, partial sequence; internal
+            transcribed spacer 1, 5.8S ribosomal RNA gene, and internal
+            transcribed spacer 2, complete sequence; and large subunit
+            ribosomal RNA gene, partial sequence.
+ACCESSION   MZ667969
+VERSION     MZ667969.1
+KEYWORDS    .
+SOURCE      Amanita bisporigera (eastern North American destroying angel)
+  ORGANISM  Amanita bisporigera
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 655)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 655)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..655
+                     /organism="Amanita bisporigera"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell Mushroom Observer #
+                     215424"
+                     /db_xref="taxon:87325"
+                     /geo_loc_name="USA: Indiana, Parke County, Marshall,
+                     Turkey Run State Park"
+                     /collection_date="30-Aug-2015"
+                     /collected_by="Russell, Stephen D"
+                     /identified_by="Russell, Stephen D"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     MushroomObserver.org #215424; MyCoPortal.org #4386788;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>655
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 gaagtaaaag tcgtaacaag gtttccgtag gtgaacctgc ggaaggatca ttactgaaat
+       61 gaaccttgag gctgtcgctg gcccatctgg gcatgtgcac gtctctggtc attaccaatt
+      121 ccacctgtgc acacttgtag acacttggga atgagagact ttgaccggtc tcttgaggga
+      181 attgaactct gggtgtctat gccattttat caaacactag ttgcatgttt atagaatgat
+      241 gatttgattg aatataaaat acaactttca acaacggatc tcttggctct cgcatcgatg
+      301 aagaacgcag cgaaatgcga taagtaatgt gaattgcaga attcagtgaa tcatcgaatc
+      361 tttgaacgca ccttgcgctc cttggcattc cgaggagcat gcctgtttga gtgtcattaa
+      421 catctcaaga cctgtctgct tttgataggt attggatttt gggagttgca ggctgtttca
+      481 gatatagctt gctctccttg aatgtattag tggagaaaag ctgttgaact ccattggtgt
+      541 gataaaatct atcaatgcca ggagcaacgt cgagttgtct ctgctgtcta accctaactg
+      601 tctgacccac ttgacctcaa atcaggtagg actacccgct gaacttaagc atatc
+//
+

@@ -1,0 +1,52 @@
+LOCUS       MK560085                 608 bp    DNA     linear   PLN 15-JUN-2022
+DEFINITION  Amanita sp. 'ostendemihi' voucher S.D. Russell MycoMap 6627
+            internal transcribed spacer 1, partial sequence; 5.8S ribosomal RNA
+            gene, complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MK560085
+VERSION     MK560085.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'ostendemihi'
+  ORGANISM  Amanita sp. 'ostendemihi'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 608)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-FEB-2019) Administration, Hoosier Mushroom Society,
+            820 Elm Dr., West Lafayette, IN 47906, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..608
+                     /organism="Amanita sp. 'ostendemihi'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap 6627"
+                     /db_xref="taxon:2608259"
+                     /geo_loc_name="USA: Nashville, Indiana"
+                     /collection_date="04-Aug-2017"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="North American Mycoflora Project; Mycoflora of
+                     Indiana; Indiana Academy of Science; MycoMap.com 6627;
+                     MyCoPortal.org 4923334;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>608
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 ctgcggaagg atcattattg aacgaaaagg gtggcaaggc tgtcgctggc ttgaatgagc
+       61 atgtgcacgt cttttgctgc tttatttcat tctatttcca cctgtgcact ttttgtagac
+      121 acttgggaac acgagaggtt gaattgattg wccccccctg ggtgtctatg cattttatat
+      181 acacagtktg yrtgtctata garwgaggkt gtrggctttt tttgtaagcc tttaaatgat
+      241 aaagtacaac tttcaacaac ggatctcttg gctctcgcat cgatgaagaa cgcagcgaaa
+      301 tgcgataagt aatgtgaatt gcagaattca gtgaatcatc gaatctttga acgcatcttg
+      361 cgctccttgg tattccgagg agcatgcctg tttgagtgtc attaagtatc tcaaaagctt
+      421 tacgcctatt gtggcgtggg acttttggac aatgggagtt gccggtcact gatgaaagtg
+      481 gtgggctctt ctgaaaagta ttagttgagg agctttgcac tctattggtg tgatagacta
+      541 tctattccag gagatgcttt acgatcctct gctgtctaac cgtctttatt ggacaaacat
+      601 gatgaact
+//
+

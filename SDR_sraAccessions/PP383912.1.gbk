@@ -1,0 +1,58 @@
+LOCUS       PP383912                 653 bp    DNA     linear   PLN 28-FEB-2024
+DEFINITION  Amanita sp. 'helmettensis' isolate S.D. Russell ONT Mushroom
+            Observer 501270 small subunit ribosomal RNA gene, partial sequence;
+            internal transcribed spacer 1, 5.8S ribosomal RNA gene, and
+            internal transcribed spacer 2, complete sequence; and large subunit
+            ribosomal RNA gene, partial sequence.
+ACCESSION   PP383912
+VERSION     PP383912.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'helmettensis'
+  ORGANISM  Amanita sp. 'helmettensis'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 653)
+  AUTHORS   Russell,S.D.
+  TITLE     Specimens from Scott Ostuni
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 653)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-FEB-2024) Administration, Mycota Lab; The Hoosier
+            Mushroom Society, 7855 N. Kilkenny Dr., Brighton, MI 48116, USA
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: NGSpeciesID v. 0.1.2.1
+            Sequencing Technology :: Oxford Nanopore MinION; Flongle 10.4.1
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..653
+                     /organism="Amanita sp. 'helmettensis'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell ONT Mushroom Observer 501270"
+                     /db_xref="taxon:2732942"
+                     /geo_loc_name="USA: Florida, Volusia County, Deland"
+                     /collection_date="09-Sep-2022"
+                     /collected_by="Scott Ostuni"
+                     /identified_by="Stephen D. Russell"
+                     /note="ONT MinION nanopore sequencing; Flongle 10.4.1;
+                     SQK-LSK114; MushroomObserver.org 501270; RiC 371;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>653
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 gtcgtaacaa ggtttccgta ggtgaacctg cggaaggatc attaatgaaa tgaaccttga
+       61 ggctgttgct ggcctgtctg ggcaatgtgc acgtctctgg tcattaccaa ttccacctgt
+      121 gcacacttgt agacacttgg gaatgagaga ttttgaccag tctcttgaga gaattgaagt
+      181 ctgggtgtct atgccatttt attaaacact agttgtatgt ttatagaatg ttgagttgat
+      241 aaaatataaa atacaacttt caacaacgga tctcttggct ctcgcatcga tgaagaacgc
+      301 agcgaaatgc gataagtaat gtgaattgca gaattcagtg aatcatcgaa tctttgaacg
+      361 caccttgcgc tccttggcat tctgaggagc atgcctgttt gagtgtcatt aacatctcca
+      421 gacctgtctg cttttgatag gtattggatt ttgggggttg caggctgttt cagattgctt
+      481 gctctccttg aatgtattag tggagaaaat ccattgaact cctttggtgt gataacatct
+      541 atcaatgcca ggagcaatgt gtcagttgtc tctgctgtct aacctagctg tccataaaca
+      601 tggacaactt gacccacttg acctcaaatc aggtaggact acccgctgaa ctt
+//
+

@@ -1,0 +1,53 @@
+LOCUS       OM473946                 502 bp    DNA     linear   PLN 07-FEB-2022
+DEFINITION  Amanita sp. 'cattaraugana' isolate S.D. Russell iNaturalist #
+            57325910 internal transcribed spacer 1, partial sequence; 5.8S
+            ribosomal RNA gene, complete sequence; and internal transcribed
+            spacer 2, partial sequence.
+ACCESSION   OM473946
+VERSION     OM473946.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'cattaraugana'
+  ORGANISM  Amanita sp. 'cattaraugana'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 502)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Online Summer Foray 2020
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 502)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JAN-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..502
+                     /organism="Amanita sp. 'cattaraugana'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell iNaturalist # 57325910"
+                     /db_xref="taxon:1906104"
+                     /geo_loc_name="USA: Indiana, Parke County, Bloomingdale"
+                     /collection_date="22-Aug-2020"
+                     /collected_by="Garrett Taylor"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana: Summer Foray 2020;
+                     iNaturalist.org #57325910;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>502
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 acctgcggaa ggatcattac tgaatgaaac ctctggctgg atgctgttgt gctggccctt
+       61 tggggggcaa atgtgcacgc tctccggtcg tttgtttctc ctgttccacc tgtscactgc
+      121 ctgtagacac atgccctgtg tctatgataa tctcacacac acatggatgt tattattatt
+      181 attatgcata tgaaataaaa aatacaactt tcaacaatgg atctcttggc tctcgcatcg
+      241 atgaagaaca cagcgaaatg tgataagtaa tgtgaattgc agaatccagt gaatcatcga
+      301 atctttgaac gcatcttgcg ctccttggca ttcygaggag catgcctgtt tgagtgtcgt
+      361 taaacttatc gaaacacttt tcttgggtgt tttggacttt gggagtgttt tgctggcctg
+      421 tttgggccgg ctctcctcaa aagcattggc tttggagaga ccaccagcat gataatttgt
+      481 tttatgctgg cctcgagtgt ct
+//
+

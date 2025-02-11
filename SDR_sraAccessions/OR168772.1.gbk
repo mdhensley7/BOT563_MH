@@ -1,0 +1,56 @@
+LOCUS       OR168772                 571 bp    DNA     linear   PLN 27-JUN-2023
+DEFINITION  Amanita sp. 'crassiputamen' isolate S.D. Russell ONT WCMB23
+            iNaturalist # 145000010 small subunit ribosomal RNA gene, partial
+            sequence; internal transcribed spacer 1, 5.8S ribosomal RNA gene,
+            and internal transcribed spacer 2, complete sequence; and large
+            subunit ribosomal RNA gene, partial sequence.
+ACCESSION   OR168772
+VERSION     OR168772.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'crassiputamen'
+  ORGANISM  Amanita sp. 'crassiputamen'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 571)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JUN-2023) Administration, Hoosier Mushroom Society,
+            1150 W. Medical Center Drive; MSRBII C570E, Ann Arbor, MI 48109,
+            USA
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: NGSpeciesID v. 0.1.2.1
+            Sequencing Technology :: Oxford Nanopore MinION; Flongle 10.4.1
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..571
+                     /organism="Amanita sp. 'crassiputamen'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell ONT WCMB23 iNaturalist # 145000010"
+                     /db_xref="taxon:1683959"
+                     /geo_loc_name="USA: California, San Mateo County, La
+                     Honda"
+                     /collection_date="22-Dec-2022"
+                     /collected_by="Josh Walker"
+                     /identified_by="Stephen D. Russell"
+                     /note="West Coast Mycoblitz 2023; ONT MinION nanopore
+                     sequencing; Flongle 10.4.1; SQK-LSK114; iNaturalist.org
+                     #145000010;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>571
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 aagtcgtaac aaggtttccg taggtgaacc tgcggaagga tcattattga atgaaacttc
+       61 tggctgggtg ttgttgtgct ggccctttgg ggcaatgtgc acacctctgg ccatttgttt
+      121 cttctattcc acctgtgcac tgcctgtaga cactctgtgt ctatgataca cacacacaca
+      181 tatacagatg gttaggcatt attatatata aaatacaact ttcaacaatg gatctcttgg
+      241 ctctcgcatc gatgaagaac acagcgaaat gtgataagta atgtgaattg cagaatccag
+      301 tgaatcatcg aatctttgaa cgcatcttgc gctccttggc attccaagga gcatgcctgt
+      361 ttgagtgtca ttaaactatc aaaacacttt tcttgggtgt tttggacttt gggagtgtct
+      421 tgctggtctg tttcaaccag ctctcctcaa aagcattagc tttgaagacc atcagtgtga
+      481 taatttgttt acgctgactt gagtgtctca gcttctcctt ttaaataccc ctttgacctc
+      541 aaatcaggta ggactacccg ctgaacttaa g
+//
+

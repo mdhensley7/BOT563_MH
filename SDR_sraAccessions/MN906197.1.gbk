@@ -1,0 +1,41 @@
+LOCUS       MN906197                 203 bp    DNA     linear   PLN 12-JAN-2020
+DEFINITION  Amanita ravenelii voucher S.D. Russell MycoMap # 530 sequence.
+ACCESSION   MN906197
+VERSION     MN906197.1
+KEYWORDS    .
+SOURCE      Amanita ravenelii
+  ORGANISM  Amanita ravenelii
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 203)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 203)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2020) Mycology, The Hoosier Mushroom Society,
+            3912 South Carey Street, Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..203
+                     /organism="Amanita ravenelii"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap # 530"
+                     /db_xref="taxon:2303119"
+                     /geo_loc_name="USA: Indiana, Monroe County, Bloomington,
+                     Griffy Woods Nature Preserve"
+                     /collection_date="19-Jul-2016"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+ORIGIN      
+        1 acctgcggaa ggatcattat tgaataaagr ctgagtagtt gggaggctgt tgctggtccg
+       61 gttgggacat gtgcacgtct cttgctatta ggtttccccc tctccacctg tgcacaaaat
+      121 gtagatgccc taggattgag agacctttwc cagtctcttg ttataatgtc taggtgtcta
+      181 tgtctrtttg attcatacac aca
+//
+

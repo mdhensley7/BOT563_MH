@@ -1,0 +1,55 @@
+LOCUS       MK564535                 684 bp    DNA     linear   PLN 02-MAR-2019
+DEFINITION  Amanita velatipes voucher S.D. Russell MycoMap 6249 small subunit
+            ribosomal RNA gene, partial sequence; internal transcribed spacer
+            1, 5.8S ribosomal RNA gene, and internal transcribed spacer 2,
+            complete sequence; and large subunit ribosomal RNA gene, partial
+            sequence.
+ACCESSION   MK564535
+VERSION     MK564535.1
+KEYWORDS    .
+SOURCE      Amanita velatipes
+  ORGANISM  Amanita velatipes
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 684)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-FEB-2019) Administration, Hoosier Mushroom Society,
+            820 Elm Dr., West Lafayette, IN 47906, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..684
+                     /organism="Amanita velatipes"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap 6249"
+                     /db_xref="taxon:2303143"
+                     /geo_loc_name="USA: Lane 200 Lake Charles West, Angola,
+                     Indiana 46703, United States, Angola, Indiana"
+                     /collection_date="21-Jul-2017"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="North American Mycoflora Project; Mycoflora of
+                     Indiana; Indiana Academy of Science; MycoMap.com 6249;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>684
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 gtaaaagtcg taacaaggtt tccgtaggtg aacctgcgga aggatcatta ttgaaataaa
+       61 aaaactcagg caggggggag tgtggttgta gctggccccc taataagggc atgtgcacac
+      121 tgtctctttc tcttgtttgt ttttttcatt ctttccactt gtgcactgct tgtaggcagc
+      181 ctggcattgt tcgggttgtc tatgattttc ttttacatac atgaatcatt gttgtacaga
+      241 atgtgataaa aatgaataat acaactttca acaacggatc tcttggctct cgcatcgatg
+      301 aagaacgcag cgaaatgcga taagtaatgt gaattgcaga attcagtgaa tcatcgaatc
+      361 tttgaacgca tcttgcgctc cttggtattc cgaggagcat gcctgtttga gtgtcattaa
+      421 attctgtcaa aacatgcact tgagtgtgtt ttggattgtg ggagtgtctg ctggctttat
+      481 atgagtcagc tctcctgaaa gacattagct ttggagggat gtgccaagtc acttctgcct
+      541 ttccattggt gtgatagatg aataaactta tctacgccag gaaagcaggt tgcaggtgat
+      601 gcactgtgat ctctctgctc tctaattgac atttgtctga taacttgacc tcaaatcagg
+      661 taggactacc cgctgaactt aagc
+//
+

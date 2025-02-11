@@ -1,0 +1,58 @@
+LOCUS       MZ667924                 695 bp    DNA     linear   PLN 03-AUG-2021
+DEFINITION  Amanita suballiacea voucher S.D. Russell iNaturalist # 17089596
+            small subunit ribosomal RNA gene, partial sequence; internal
+            transcribed spacer 1, 5.8S ribosomal RNA gene, and internal
+            transcribed spacer 2, complete sequence; and large subunit
+            ribosomal RNA gene, partial sequence.
+ACCESSION   MZ667924
+VERSION     MZ667924.1
+KEYWORDS    .
+SOURCE      Amanita suballiacea
+  ORGANISM  Amanita suballiacea
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 695)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 695)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..695
+                     /organism="Amanita suballiacea"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell iNaturalist # 17089596"
+                     /db_xref="taxon:500611"
+                     /geo_loc_name="USA: Indiana, Brown County, Nashville"
+                     /collection_date="30-Sep-2018"
+                     /collected_by="Brian Hunt"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     iNaturalist.org #17089596;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>695
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 gacgctcttc cgatctcttg gtcatttaga ggaagtaaaa gtcgtaacaa ggtttccgta
+       61 ggtgaacctg cggaaggatc attaatgaga tgaaccttga ggctgtagct ggcccatctg
+      121 ggcatgtgca cgtctctggt cattaccaat tccacctgtg cacacttgta gacacttggg
+      181 aatgagagac tttgaccggt ctcttgagaa gttgaaatct aggtgtctat gccattttat
+      241 taaacactag ttgcatgttt atagaatgat gatttgatta tatataaagt acaactttca
+      301 acaacggatc tcttggctct cgcatcgatg aagaacgcag cgaaatgcga taagtaatgt
+      361 gaattgcaga attcagtgaa tcatcgaatc tttgaacgca ccttgcgctc cttggcattc
+      421 caaggagcat gcctgtttga gtgtcattaa agtctcaaga cctgtctgat tttgataggt
+      481 attggatttt gggggttgca ggctttttca gatagcctgc tctccttgaa tgtattagtg
+      541 gagaaagagc catttgaact ccattggtgt gataaaacct atcaatgcca ggagcaatgt
+      601 tagttctctc tgctgtctaa ctgtctgtaa aaatggacaa tttgaccaac ttgacctcaa
+      661 atcaggtagg actacccgct gaacttaagc atatc
+//
+

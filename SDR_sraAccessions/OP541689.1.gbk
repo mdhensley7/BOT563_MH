@@ -1,0 +1,54 @@
+LOCUS       OP541689                 550 bp    DNA     linear   PLN 02-OCT-2022
+DEFINITION  Amanita sp. 'lewisii' isolate S.D. Russell NAMA2018 MS iNaturalist
+            13922705 internal transcribed spacer 1, partial sequence; 5.8S
+            ribosomal RNA gene, complete sequence; and internal transcribed
+            spacer 2, partial sequence.
+ACCESSION   OP541689
+VERSION     OP541689.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'lewisii'
+  ORGANISM  Amanita sp. 'lewisii'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 550)
+  AUTHORS   Russell,S.D.
+  TITLE     NAMA 2018 Regional Foray - Pickens, MS
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 550)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-SEP-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..550
+                     /organism="Amanita sp. 'lewisii'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell NAMA2018 MS iNaturalist 13922705"
+                     /db_xref="taxon:2706163"
+                     /geo_loc_name="USA: Mississippi, Madison County, Pickens"
+                     /collection_date="30-Jun-2018"
+                     /collected_by="Bill Sheehan"
+                     /identified_by="Stephen D. Russell"
+                     /note="NAMA 2018 Regional Foray - Canton, MS;
+                     iNaturalist.org 13922705;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>550
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 ctgcggaagg atcattattg aatgaaactt ctgactggga tgctgtttgc tggcccttcg
+       61 gggtaatgtg cacgcttctr gttatttgtt tcttttgttc cacctgtgca ctgcctgtag
+      121 gcacatactc ttgtgtctat gatatgttta tatgcacttc atttatatgt atgttatttg
+      181 gcttgtataa aatgagataa cattttacaa ctttcaacaa cggatctctt ggctctcgca
+      241 tcgatgaaga acacagcgaa atgtgataag taatgtgaat tgcagaatcc agtgaatcat
+      301 cgaatctttg aacgcatctt gcgctccttg gtattccgag gagcatgcct gtttgagtgt
+      361 cgttaaacta tcaaaacaca actgctgttt gctttggtgt gttttggact ttgggactgt
+      421 gctggttgtg ttcagctctc ctcaaaagca ttcattagct taaagatatg atgcatcagc
+      481 gtgataaaat tgtctttgcg ttggcactrt gtctctctgc ttttatgaca tttcatgacc
+      541 attgacctca
+//
+

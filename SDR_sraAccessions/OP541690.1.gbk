@@ -1,0 +1,55 @@
+LOCUS       OP541690                 425 bp    DNA     linear   PLN 02-OCT-2022
+DEFINITION  Amanita cinereoconia isolate S.D. Russell NAMA2018 MS iNaturalist
+            13925885 small subunit ribosomal RNA gene, partial sequence;
+            internal transcribed spacer 1 and 5.8S ribosomal RNA gene, complete
+            sequence; and internal transcribed spacer 2, partial sequence.
+ACCESSION   OP541690
+VERSION     OP541690.1
+KEYWORDS    .
+SOURCE      Amanita cinereoconia
+  ORGANISM  Amanita cinereoconia
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 425)
+  AUTHORS   Russell,S.D.
+  TITLE     NAMA 2018 Regional Foray - Pickens, MS
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 425)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-SEP-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..425
+                     /organism="Amanita cinereoconia"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell NAMA2018 MS iNaturalist 13925885"
+                     /db_xref="taxon:1004477"
+                     /geo_loc_name="USA: Mississippi, North Gray Center Road"
+                     /collection_date="30-Jun-2018"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="NAMA 2018 Regional Foray - Canton, MS;
+                     iNaturalist.org 13925885; Caution: I generally do not
+                     include low quality sequences, but this one has a
+                     secondary specimen to validate;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>425
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, and internal
+                     transcribed spacer 2"
+ORIGIN      
+        1 tgtaggtgaa cctgcggaag gatcattatt gaatgatagt atgaagctgt tgctgctccc
+       61 tttgggatat tgtgcacgct tctrgctgtc cttttccacc tgtgcataac ttgtagacat
+      121 ctgggattgg aggggccttt atcagccgct tgtttaatga aagtgtctgg atgtttatgt
+      181 tacatttata taatacatat atggattgaa tgkatagaga atgatattta atgaaaagta
+      241 caactttcaa caatggatct cttggctctc gcatcgatga agaacgcagc gaaatgcgat
+      301 aagtaatgtg aattgcagaa ttcagtgaat catcgaatct ttgaacgcac cttgcgctcc
+      361 ttggtattct gaggagcatg cctgtttgag tgtcataaaa ttatcaagaa cttgtcacta
+      421 cgaaa
+//
+

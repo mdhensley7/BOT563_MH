@@ -1,0 +1,54 @@
+LOCUS       MZ668221                 583 bp    DNA     linear   PLN 03-AUG-2021
+DEFINITION  Amanita arkansana voucher S.D. Russell iNaturalist # 28188915
+            internal transcribed spacer 1, partial sequence; 5.8S ribosomal RNA
+            gene, complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MZ668221
+VERSION     MZ668221.1
+KEYWORDS    .
+SOURCE      Amanita arkansana
+  ORGANISM  Amanita arkansana
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 583)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 583)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..583
+                     /organism="Amanita arkansana"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell iNaturalist # 28188915"
+                     /db_xref="taxon:1262670"
+                     /geo_loc_name="USA: Indiana, Orange County"
+                     /collection_date="03-Jul-2019"
+                     /collected_by="iNaturalist.org User, roundabout1812"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     iNaturalist.org #28188915;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>583
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 acctgcggaa ggatcattat tggaatgaaa tatctagcaa gaggctgttg ctgtctagta
+       61 atatgcacgc cttttgtgga aaaataaacc cttagcagca acttgtttcg atcaagtgac
+      121 ctcagggtta tgggccctgc gcgcttccac tgcgccatgc tgctgtgtgg ggatttattt
+      181 cttctccctg tgcaccactt gtagactttg tctgtctatg aatcacataa cctttatgaa
+      241 tgcatctttg tggcccatta atrtatatac aactttcaac aatggatctc ttggctctcg
+      301 catcgatgaa gaacgcagcg aaatgcgata agtaatgtga attgcagaat tcagtgaatc
+      361 atcgaatctt tgaacgcatc ttgcgctctt tggtattccg aagagcatgc ctgtttgagt
+      421 gtcattaatc tctcaaaact tcatttttat gaagtaattg gatattggga gtcattgctg
+      481 acggctgttg aagctcagct ctccttaaat tccttgagga cgaaatgttg gtgtgtgata
+      541 ataattgtct atgccaaaca agtccttttg ctatcttaat gat
+//
+

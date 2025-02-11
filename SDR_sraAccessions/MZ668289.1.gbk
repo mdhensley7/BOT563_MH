@@ -1,0 +1,54 @@
+LOCUS       MZ668289                 542 bp    DNA     linear   PLN 03-AUG-2021
+DEFINITION  Amanita sp. 'longicuneus' voucher S.D. Russell iNaturalist #
+            15931653 internal transcribed spacer 1, partial sequence; 5.8S
+            ribosomal RNA gene, complete sequence; and internal transcribed
+            spacer 2, partial sequence.
+ACCESSION   MZ668289
+VERSION     MZ668289.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'longicuneus'
+  ORGANISM  Amanita sp. 'longicuneus'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 542)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 542)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..542
+                     /organism="Amanita sp. 'longicuneus'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell iNaturalist # 15931653"
+                     /db_xref="taxon:2528162"
+                     /geo_loc_name="USA: Indiana, Parke County"
+                     /collection_date="26-Aug-2018"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     iNaturalist.org #15931653;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>542
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 aggtgacctg cggaaggatc attattgaat gaaacttctg gctggatgct gttgtgctgg
+       61 ccctttgtgg caatgtgcac accttctggt catttgtgtt tcttctgttc cacctgtgca
+      121 ctgactgtag acacactgtg tctatgatat tggttacaca cacacacaat gttatgttgg
+      181 catgtatata ttatttatat aaatacaact ttcaacaatg gatctcttgg ctctcgcatc
+      241 gatgaagaac acagcgaaat gtgataagta atgtgaattg cagaatccag tgaatcatcg
+      301 aatctttgaa cgcatcttgc gctccttggc attccgagga gcatgcctgt ttgagtgtca
+      361 ttaaactatc aaaacacttt ttttaatata taattaagaa aaagtgtttt ggactttggg
+      421 agtattgtgc tggcctgttt gagccagctc tcctcaaaag cattagcttt ggagaccatc
+      481 agtgtgataa tttgtttaca ctggcttctc cttttaaatg cacccttgac ctcaaatcag
+      541 gt
+//
+

@@ -1,0 +1,51 @@
+LOCUS       OP541653                 405 bp    DNA     linear   PLN 02-OCT-2022
+DEFINITION  Amanita sp. 'ostendemihi' isolate S.D. Russell NAMA2018 MS
+            iNaturalist 13893786 internal transcribed spacer 1, partial
+            sequence; 5.8S ribosomal RNA gene, complete sequence; and internal
+            transcribed spacer 2, partial sequence.
+ACCESSION   OP541653
+VERSION     OP541653.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'ostendemihi'
+  ORGANISM  Amanita sp. 'ostendemihi'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 405)
+  AUTHORS   Russell,S.D.
+  TITLE     NAMA 2018 Regional Foray - Pickens, MS
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 405)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-SEP-2022) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..405
+                     /organism="Amanita sp. 'ostendemihi'"
+                     /mol_type="genomic DNA"
+                     /isolate="S.D. Russell NAMA2018 MS iNaturalist 13893786"
+                     /db_xref="taxon:2608259"
+                     /geo_loc_name="USA: Mississippi, Madison County, Pickens"
+                     /collection_date="29-Jun-2018"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="NAMA 2018 Regional Foray - Canton, MS;
+                     iNaturalist.org 13893786;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>405
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 ttttttgtaa gcctttaaat gataaagtac aactttcaac aacggatctc ttggctctcg
+       61 catcgatgaa gaacgcagcg aaatgcgata agtaatgtga attgcagaat tcagtgaatc
+      121 atcgaatctt tgaacgcatc ttgcgctcct tggtattccg aggagcatgc ctgtttgagt
+      181 gtcattaagt atctcaaaag ctttacgcct attgtggcgt gggacttttg gacaatggga
+      241 gttgccggtc actgatgaaa gtggtgggct cttctgaaaa gtattagttg aggagctttg
+      301 cactctattg gtgtgataga ctatctattc caggagatgc tttacgatcc tctgctgtct
+      361 aaccgtcttt attggacaar catgatgaac tgacctcaaa tcagg
+//
+

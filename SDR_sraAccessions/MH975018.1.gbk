@@ -1,0 +1,50 @@
+LOCUS       MH975018                 647 bp    DNA     linear   PLN 30-SEP-2018
+DEFINITION  Amanita thiersii voucher S.D. Russell MycoMap # 10397 small subunit
+            ribosomal RNA gene, partial sequence; internal transcribed spacer
+            1, 5.8S ribosomal RNA gene, and internal transcribed spacer 2,
+            complete sequence; and large subunit ribosomal RNA gene, partial
+            sequence.
+ACCESSION   MH975018
+VERSION     MH975018.1
+KEYWORDS    .
+SOURCE      Amanita thiersii
+  ORGANISM  Amanita thiersii
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 647)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-SEP-2018) Administration, Hoosier Mushroom Society,
+            820 Elm Dr., West Lafayette, IN 47906, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..647
+                     /organism="Amanita thiersii"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap # 10397"
+                     /db_xref="taxon:235537"
+                     /geo_loc_name="USA: Indiana, Bloomington, Monroe County"
+                     /collection_date="09-Sep-2007"
+                     /collected_by="Michael Kuo"
+                     /note="PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>647
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 aaagtcgtaa caaggtttcc ngtaggtgaa cctgcggaag gatcattaat gaaatgccta
+       61 tataggccat ttctctatat ccacctgtgc actatatgtt gtagactctt gggttatagg
+      121 aagggaggcg atatagtctg cctttctgtg tcatgtccaa agtctatgat gactatacta
+      181 catacatggt tattgtaatg ttgaatatgt tttttggctg ttaaagcctt taaataacta
+      241 tacaactttc aacaacggat ctcttggctc tcgcatcgat gaagaacgca gcgaaatgcg
+      301 ataagtaatg tgaattgcag aattcagtga atcatcgagt ttttgaacgc accttgcgct
+      361 ccttggtatt ccgaggagca tgcctgtttg agtgtcagta tattctcaaa agcatttggt
+      421 tgcttttgga gttgggggtt gcaggctgta cttttacaat ggtagtcagc tcctcttaaa
+      481 agaatagctc gagtgagcct tcatttggtg tgatacacta tctatgctaa atggatggcg
+      541 tgattaactt gagtcttact caaggttgtg ctgtcgttgc tttaaatgat tgtccctcct
+      601 tattttttga tactcttgac ctcaaatcag gtaggactac ccgctga
+//
+

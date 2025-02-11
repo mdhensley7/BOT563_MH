@@ -1,0 +1,53 @@
+LOCUS       MZ668145                 506 bp    DNA     linear   PLN 05-JAN-2022
+DEFINITION  Amanita sp. 'IN39' voucher S.D. Russell iNaturalist # 19074753
+            internal transcribed spacer 1, partial sequence; 5.8S ribosomal RNA
+            gene, complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MZ668145
+VERSION     MZ668145.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'IN39'
+  ORGANISM  Amanita sp. 'IN39'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 506)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 506)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..506
+                     /organism="Amanita sp. 'IN39'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell iNaturalist # 19074753"
+                     /db_xref="taxon:2863059"
+                     /geo_loc_name="USA: Indiana, Monroe County, Bloomington"
+                     /collection_date="29-Jun-2018"
+                     /collected_by="Ron Kerner"
+                     /identified_by="Stephen D. Russell"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     iNaturalist.org #19074753;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>506
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 acctgcggaa ggatcattat tgaatgaaac ttctggtcgg atgctgtttg ctggcccttc
+       61 gggggtaatg tgcacgcatc tggtcatatg tttcttttgt tccacctgtg cactgcctgt
+      121 aggcacacat ccattgtgtc tatgatgtgt ttttatatgc acttatatat tgtatgtctt
+      181 ttggcattta taaaatgaga taacatttta caactttcaa caacggatct cttggctctc
+      241 gcatcgatga agaacacagc gaaatgtgat aagtaatgtg aattgcagaa tccagtgaat
+      301 catcgaatct ttgaacgcat cttgcgctcc ttggtattct gaggagcatg cctgtttgag
+      361 tgtcattaaa ctatcaaaac acaactgctg tttgtcaccg gtgtgttttg gactttggga
+      421 ccgtgctggt tatgtccagc tctcctcaaa agcattcatt agcttggaga tgatgcatca
+      481 gtgtgataaa ttaatctatg tgctgg
+//
+

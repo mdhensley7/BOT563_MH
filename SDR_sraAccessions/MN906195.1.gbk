@@ -1,0 +1,48 @@
+LOCUS       MN906195                 347 bp    DNA     linear   PLN 12-JAN-2020
+DEFINITION  Amanita atkinsoniana voucher S.D. Russell MycoMap # 6689 internal
+            transcribed spacer 1, partial sequence; 5.8S ribosomal RNA gene,
+            complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MN906195
+VERSION     MN906195.1
+KEYWORDS    .
+SOURCE      Amanita atkinsoniana
+  ORGANISM  Amanita atkinsoniana
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 347)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 347)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2020) Mycology, The Hoosier Mushroom Society,
+            3912 South Carey Street, Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..347
+                     /organism="Amanita atkinsoniana"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap # 6689"
+                     /db_xref="taxon:1004473"
+                     /geo_loc_name="USA: Indiana, Brown County"
+                     /collection_date="04-Aug-2017"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>347
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 agagaaataa aatacaactt tcaacaatgg atctcttggc tctcgcatcg atgaagaacg
+       61 cagcgaaatg cgataagtaa tgtgaattgc agaattcagt gaatcatcga atgtttgaac
+      121 gcatcttgcg ctccttggta ttcctcggag catgcctgtt tgagtgtcat taaattgtca
+      181 aaagcacctt gaatttttcg gtggttttgg attatgggag tttgcaggcc ccggttgatg
+      241 ggccagctct cctgaaatga atttgcggag acctggtatt ggtgtgataa ttaaaatttc
+      301 atcagaaagg tttttgctta aaaacgtctt tggacggatt atcaaag
+//
+

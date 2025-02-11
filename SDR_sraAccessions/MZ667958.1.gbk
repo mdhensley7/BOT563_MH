@@ -1,0 +1,61 @@
+LOCUS       MZ667958                 730 bp    DNA     linear   PLN 31-OCT-2022
+DEFINITION  Amanita sp. 'jenkinsii' voucher S.D. Russell Mushroom Observer #
+            213773 small subunit ribosomal RNA gene, partial sequence; internal
+            transcribed spacer 1, 5.8S ribosomal RNA gene, and internal
+            transcribed spacer 2, complete sequence; and large subunit
+            ribosomal RNA gene, partial sequence.
+ACCESSION   MZ667958
+VERSION     MZ667958.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'jenkinsii'
+  ORGANISM  Amanita sp. 'jenkinsii'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 730)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 730)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..730
+                     /organism="Amanita sp. 'jenkinsii'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell Mushroom Observer #
+                     213773"
+                     /db_xref="taxon:2982082"
+                     /geo_loc_name="USA: Indiana, Morgan County, Martinsville,
+                     Morgan-Monroe State Forest"
+                     /collection_date="22-Aug-2015"
+                     /collected_by="Russell, Stephen D"
+                     /identified_by="Russell, Stephen D"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     MushroomObserver.org #213773; MyCoPortal.org #4386733;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>730
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 tccttggtca ttttagagga agtaaaagtc gtancaaggt ttccgtaggt gaacntgcgg
+       61 aaggatcatt actgaacgaa atgggtggca aggctgtcgc tggttcaaac gagcatgtgc
+      121 acgtcttctg ctgcttgctt cattctcttt tccacctgtg cactttttgt agacactcgg
+      181 gatgggagag aggtttagca ttaattggtc gacctctctt gatattggaa agtctgggtg
+      241 tttatgtgtt tttttgacat acacaattga atgtctatag aatgaaatgt aggcttttgt
+      301 tagcctttaa atgataaaat acaactttca acaacggatc tcttggctct cgcatcgatg
+      361 aagaacgcag cgaaatgcga taagtaatgt gaattgcaga attcagtgaa tcatcgaatc
+      421 tttgaacgca tcttgcgctc cttggtattc cgaggagcat gcctgtttga gtgtcattaa
+      481 atatctcaaa aagcttgtgc tttttttggc atgggatttt tggacattgg gagttgccgg
+      541 ctgctgataa agtggtgggc tcttctgaaa agcattagtt gaggagcttt gcactctatt
+      601 ggtgtgatag actatctatg ccaggagatg catcatggat cctctgccat ccaattgtct
+      661 ttatcagaca acatgataaa cttgacctca aatcangtag gactacccgc tgaacttaag
+      721 catatcataa
+//
+

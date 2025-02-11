@@ -1,0 +1,54 @@
+LOCUS       MZ667955                 461 bp    DNA     linear   PLN 05-JAN-2022
+DEFINITION  Amanita sp. 'IN20' voucher S.D. Russell Mushroom Observer # 212440
+            internal transcribed spacer 1, partial sequence; 5.8S ribosomal RNA
+            gene, complete sequence; and internal transcribed spacer 2, partial
+            sequence.
+ACCESSION   MZ667955
+VERSION     MZ667955.1
+KEYWORDS    .
+SOURCE      Amanita sp. 'IN20'
+  ORGANISM  Amanita sp. 'IN20'
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 461)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana - Amanita
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 461)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2021) Administration, Hoosier Mushroom Society,
+            3912 S. Carey St., Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..461
+                     /organism="Amanita sp. 'IN20'"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell Mushroom Observer #
+                     212440"
+                     /db_xref="taxon:2863046"
+                     /geo_loc_name="USA: Indiana, Morgan County, Martinsville,
+                     Morgan-Monroe State Forest"
+                     /collection_date="09-Aug-2015"
+                     /collected_by="Russell, Stephen D"
+                     /identified_by="Russell, Stephen D"
+                     /note="Mycoflora of Indiana; Amanita of Indiana;
+                     MushroomObserver.org #212440; MyCoPortal.org #4386657;
+                     PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>461
+                     /note="contains internal transcribed spacer 1, 5.8S
+                     ribosomal RNA, and internal transcribed spacer 2"
+ORIGIN      
+        1 tttatacaga tcttcaggtg tttatgtttt ttttctatta cacttaatga gaaattttga
+       61 atgtggttta ttatgataaa tacaactttc aacaatggat ctcttggctc tcgcatcgat
+      121 gaagaacgca gcgaaatgcg ataagtaatg tgaattgcag aattcagtga atcatcgaat
+      181 gtttgaacgc atcttgcgct ccttggtatt ccttggagca tgcctgttkg agtgtcattt
+      241 aatattgtca agactaattc tgagtatgat ttyggaagat gttttggaat ttgggggttg
+      301 cagattcatt ttatttgaac tagctytcct gaaatggatt agcaaaaggg cattatgggc
+      361 cmttttattg gygtgataat gtttattgat ccaccagaaa gggggaacat gtgcacatgm
+      421 attttgctga tataaaaaag attaagaaag tcgacctcaa a
+//
+

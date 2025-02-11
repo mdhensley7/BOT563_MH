@@ -1,0 +1,56 @@
+LOCUS       MN906206                 692 bp    DNA     linear   PLN 12-JAN-2020
+DEFINITION  Amanita solaniolens voucher S.D. Russell MycoMap # 6086 small
+            subunit ribosomal RNA gene, partial sequence; internal transcribed
+            spacer 1, 5.8S ribosomal RNA gene, and internal transcribed spacer
+            2, complete sequence; and large subunit ribosomal RNA gene, partial
+            sequence.
+ACCESSION   MN906206
+VERSION     MN906206.1
+KEYWORDS    .
+SOURCE      Amanita solaniolens
+  ORGANISM  Amanita solaniolens
+            Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina;
+            Agaricomycetes; Agaricomycetidae; Agaricales; Pluteineae;
+            Amanitaceae; Amanita.
+REFERENCE   1  (bases 1 to 692)
+  AUTHORS   Russell,S.D.
+  TITLE     Mycoflora of Indiana
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 692)
+  AUTHORS   Russell,S.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2020) Mycology, The Hoosier Mushroom Society,
+            3912 South Carey Street, Marion, IN 46953, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..692
+                     /organism="Amanita solaniolens"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="S.D. Russell MycoMap # 6086"
+                     /db_xref="taxon:1001054"
+                     /geo_loc_name="USA: Indiana, Porter County"
+                     /collection_date="04-Jul-2017"
+                     /collected_by="Stephen Russell"
+                     /identified_by="Stephen Russell"
+                     /note="PCR_primers=fwd_name: ITS1F, rev_name: ITS4"
+     misc_RNA        <1..>692
+                     /note="contains small subunit ribosomal RNA, internal
+                     transcribed spacer 1, 5.8S ribosomal RNA, internal
+                     transcribed spacer 2, and large subunit ribosomal RNA"
+ORIGIN      
+        1 taaaagtcgt aacaaggttt ccgtaggtga acctgcggaa ggatcattat tgaacagcaa
+       61 tgggtggcaa agactgttgc tggcttgaat gagcatgtgc acgtcatttg ctgcttattt
+      121 cattcatttt tcctcctgtg aaccttttgt agacacttgg gaatgagaag ttggttgtaa
+      181 tgattgacct cttgatattg atctgggtgt ctatgccatt tttataaaga catggttgca
+      241 tgtgtataga atgagattgt atggtttttt taataaagcc tttaaatgat aatacaactt
+      301 tcaacaacgg atctcttggc tctcgcatcg atgaagaacg cagcgaaatg cgataagtaa
+      361 tgtgaattgc agaattcagt gaatcatcga atctttgaac gcatcttgcg ctccttggta
+      421 ttccgaggag catgcctgtt tgagtgtcat taagtatctc aaaagctctt acttatgtgc
+      481 tatacatgag agttttggac attgggagtt gctggtcact aagtgatggg ctcttctgaa
+      541 aagcattagt tgaggagctt ttgcactcta ttggtgtgat aaactatcta tgccaggaga
+      601 agcattatga accctctgct gcctaacagt ccattattgg acaagatgat caacttgacc
+      661 tcaaatcagg taggactacc cgctgaactt aa
+//
+
