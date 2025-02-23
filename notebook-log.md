@@ -1,36 +1,59 @@
-# BOT563 SDR Amanita Pipeline
-## Project objectives
-I want to create a pipeline that will organize the taxonomy of midwestern Amanita. It will only be using one locus of comparison so I will keep in mind that I may not have the most robust phylogeny. That is not the point of this. The point is to gain familiarity with a phylogenetic pipeline and begin the journey of tinkering with Amanita genetic sequences.
-- The folder for this project is named "BOT563_MH"
-## Cloning git repository
+# BOT563 Cui Amanita Pipeline
+## 1 - Project information
+### 1.1 - Project objectives
+I am using the dataset that Cui et al. 2018 used to create the modern accepted phylogeny of Amanita. This is an important aspect of my project as I will use the Cui et al. phylogeny as a reference with which to put my own data into perspective.
+The objectives of this project are:
+- To recreate the phylogeny used by Cui et al. 2018 and begin to understand how to use their data
+- To learn about phylogenetic pipelines and gain experience in coding and trouble shooting issues
+- To build multilocus phylogenies
+- To gain foundational knowledge in phylogenetic inference that I can apply to my own data in the future
+
+### 1.2 - Information on the data set I am using
+Fungal phylogenetics use similar loci as targets.
+For the Amanita genus, it is common to see sequences that derive the Internal Transcribed Spacer (ITS) and the Large Ribosomal Subunit (nrLSU or 28S)
+Furthermore, there are 3 other loci that are used intermittenly: Beta-Tubulin (btub), Rna Polymerase Subunit 2 (rpb2), and Transelongation Factor 1 - alpha (ef1a).
+Using all five loci will give us more confidence in the phylogenetic tree that is created.
+Cui et al. 2018 created a word document with all accessions used to create the 5 loci phylogenies. The data was derived from 864 specimens however a majority did not have data for all five loci with 1-4 of the loci not sequenced
+I decided to target the specimens that had all five loci to parse down the size of the data set and to make it easier to work with the multiple loci.
+- This gave me a set with 207 total specimens
+I then went through and deleted specimens until there were only three specimens per species
+- This gave me a set with 158 total specimens
+While this brings the total number of sequences to (158x5=) 790 however I only have to work with one loci at a time so I don't think my computing time will be much longer than anyone else.
+
+### 1.3 - Working with git
+This is necessary for backing up my work in git and for Claudia to be able to follow my work along.
+- Cloning git repo
 ```shell
 git clone https://github.com/mdhensley7/BOT563_MH.git #pulls repository from github online and makes a copy in your directory
 ```
-
-## Pulling data from NCBI:
-- I pulled a total of 785 accession numbers from NCBI of different specimens that were sequenced for their Internal Transcribed Spacer (ITS) region by Steven D. Russell.
-- These accession numbers are found in the .txt file labelled "SDR_Accessions" in the project folder
-- I basically manually copy and pasted these accessions from the website so will need to figure out a better way to strip data but fine for now
-
-## Translating "SDR_Accession.txt" accessions into fast.q files
+- Committing files to online git hub repo
 ```shell
-cat SDR_Accessions #reads texts file in the terminal
-
-sudo apt install sra-toolkit #Install the package needed to translate accessions into fast.q
-## This is for SRA accessions and I have nucleotide accession
-
-sudo apt install ncbi-acc-download #Will hopefully allow me to download SRA accessions from my nucleotide accessions
-
-#Using ncbi-acc-download to download SRA accessions from my nucleotide accessions
-accs=$(cat SDR_Accessions)
-for i in $accs
-do
-ncbi-acc-download -m 'nucleotide' $i
-done
-#These come out as .gbk files and are found in SDR_sraAccessions
+git add . #stages the push
+git commit -m "update readme" #commits the changes as long as all will merge properly
+git push #sets changes and next step is creating a pull request on github online
 ```
 
-The next step is taking the .gbk (SRA accession) files and converting them to fast-q
+
+### 1.4 - Packages I downloaded along the way
+These will also be found in the code where they were being used but I downloaded some packages I did not use and just want to keep track of the fact that I have them
+```shell
+#Install the package needed to translate accessions nuc into .sra
+sudo apt install sra-toolkit #I didn't end up using 'sra-toolkit'
+
+#Package that downloads data via accession numbers
+sudo apt install ncbi-acc-download #This worked for a data set I am no longer using but didn't work for the Cui data
+
+pip install #Specific python code to install things
+
+#The code below installed the Entrez Direct package which is what ultimately worked in dowloading the .fasta files
+sh -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
+sh -c "$(wget -q https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh -O -)"
+
+pip install biopython #Not used 
+```
+### 1.5 - Potentially useful scripts that ended up not being used in this pipeline
+
+Taking the .gbk (SRA accession) files and converting them to .fasta
 ```shell
 pip install biopython #needed for transition
 for file in /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/SDR_sraAccessions/*.gbk
@@ -39,52 +62,73 @@ python -c "from Bio import SeqIO; SeqIO.convert('$file', 'genbank', '${file%.*}.
 done 
 #I now have a .gbk and a .fasta file for each succession in my SDR_sraAccessions
 ```
-## Committing files to online git hub repo
+
+## 2 - Downloading and organizing the data
+Figuring out how to take accession numbers from the word document and using those to download the .fasta files
+
+### 2.1 - Copying accession numbers into .txt files
+From the word document, I copied each accession number into a text file
+Each loci has its own .txt with the respective accession numbers from each specimen
+These files are found in the "cui_am5_raw" folder housed in BOT563_MH/data/
+
+### 2.2 - Translating "loci_acc.txt" accessions into .fasta files
+Each accession number is on its own seperate line in the .txt files. Below is a walk through of downloading the .fasta files from these accession numbers.
 ```shell
-git add . #stages the push
-git commit -m "update readme" #commits the changes as long as all will merge properly
-git push #sets changes and next step is creating a pull request on github online
-```
-## Creating a smaller subset of the data
-Since this is a large data set, it will be slow to work with and will make troubleshooting a lot more time consuming.
+#First I move into the directory with the .txt files
+cd /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/cui_am5_raw
 
-First, I need to pull the .gbk files out of the same folder that my .fasta files are in.
+#to read the text files in the terminal
+cat loci_acc.txt # swap "loci" in "loci_acc.txt" with name of loci in question
+```
+Downloading proper tools for process
 ```shell
-mv /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/SDR_sraAccessions/*.gbk /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/sra_accessions # the * indicates that the command will be applied to any file with .gbk
-#this command moved the .gbk files from SDR_sraAccessions to sra_accessions. The naming is very confusing so I will change the name of the first folder to "sdr_fasta"
-mv -v SDR_sraAccessions sdr_fasta #now my folders are named properly
+# Installing entrez direct as the means of downloading fasta files
+sh -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
+sh -c "$(wget -q https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh -O -)"
 ```
-
-The "sdr_fasta" directory contains 785 fasta files. I need to take an n=50 sample
-
-Seqkit is a tool that can randomly choose this sample for me but it needs to be installed
+Executing 2.2
 ```shell
-sudo apt install seqkit
+#This script automates the process so I don't have to download each individual fasta manually
+accs=$(cat "loci_acc.txt") #swap "loci" with correct loci name
+for i in $accs
+do
+efetch -db nuccore -format fasta -id $i #command to retrieve fasta file from corresponding accession number
+done
+#This worked by displaying all fasta files in the terminal but I don't see them downloaded anywhere
+#Command below actually downloaded the fastas
+efetch -db nuccore -format fasta -id $i > $i.fasta #uses same other commands as above just adds the command to download them into fasta files
+#It worked!
 ```
-I then combined all of my 785 .fasta files into a single .fasta file
+Now we have a bunch of .fasta files in with the accession .txt files so need to organize
 ```shell
-cat *.fasta > /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/sdr_fasta/sdr_am.fasta
-#now I can use different scripts to inspect the data together
+cd cui_am5_raw
+mkdir fasta #only do once
+cd fasta
+mkdir nrlsu #do for each loci
+cd .. #Should put you back into cui_am5_raw
+mv *.fasta fasta #Moves all fasta files into fasta folder
+cd fasta
+mv *.fasta nrlsu #Moves all fasta files in fasta folder into nrlsu folder. Make sure to put correct loci in corresponding folder
 ```
-Manipulating the .fasta using seqkit
+- When downloading the "nrlsu" fastas there were four errors "missing argument describing data source". 
+  - 2 errors for btub
+  - 1 error for its
+  - 0 errors for rpb2
+  - 0 errors for tef1a
+    - However, all accessions downloaded a .fasta file so hoping there is no issue moving forward
+- Repeated process above for the remaining four loci
+  - At this point the ~/BOT563_MH/data/cui_am5_working/fasta folder should contain 5 separate folders each containing the .fasta files of the sequences corresponding to each loci
+- There was also an empty .fasta file that was made for each loci so I deleted that one
+  - each folder should contain only 158 fasta files
+- Finally, I transfer the 'fasta' folder from cui_am5_raw to cui_am5_working
 ```shell
-#Will show you the sequence of the first accession in the file; NOTE: changing the 1 to a 2 will show both the first AND second. Not just the second. -n 35 will show the first 35 sequences etc.
-seqkit head -n 1 sdr_am.fasta
-
-#converting the .fasta to a .fasta.gz
-seqkit seq sdr_am.fasta -o sdr_am.fasta.gz
-
-#pulling a random size 50 samples from the 785 accessions I have
-zcat sdr_am.fasta.gz | seqkit sample -n 50 -o sdr_am_50samp.fasta.gz
-#It worked! "sdr_am_50samp.fasta.gz" is the data I will use for the class
-
-#Just to make sure it pulled randomly we are going to check the first 5 sequences of each
-seqkit head -n 5 sdr_am.fasta.gz
-seqkit head -n 5 sdr_am_50samp.fasta.gz
-#They are indeed different suggesting a random pull of sequences
+cd /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/cui_am5_raw
+mv fasta /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/cui_am5_working
 ```
-## Aligning the sequences
-Now I am going to try to align the sequences in the file sdr_am_50samp.fasta.gz using MAFFT and potentially clustalw
+### From this point, I stick with only using the nrlsu data for class homework
+
+## 3 - Aligning the sequences
+Now I am going to try to align the sequences in ~/BOT563_MH/data/cui_ using MAFFT and potentially clustalw
 
 This is a trial run of sorts so have to go back to make adjustments on the software's assumptions
 
@@ -103,3 +147,19 @@ mafft --auto sdr_am_50samp.fasta > 50samp_aligned #-- auto flag in the command e
 
 mafft 50samp_aligned #shows alignments in the terminal
 ```
+Here I committed changes to github
+
+### Aligning via ClustalW
+
+sdr_am_50samp.fasta is the file I use for both alignments. Found in the"working_data" folder
+
+```shell
+grep ">" sdr_am_50samp.fasta | wc -l #checks how many sequences you have
+clustalw2 -ALIGN -INFILE=sdr_am_50samp.fasta -OUTFILE=50samp_alignedCW.fasta -OUTPUT=FASTA
+```
+The alignment score will change with the parameters you manipulate
+Want the highest score but confirm this by reading the alignment manual
+
+
+GO THROUGH DOCUMENTATION FOR THE ALIGNMENTS AND MANIPULATE THE PARAMETERS ACCORDINGLY
+
