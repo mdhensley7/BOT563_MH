@@ -178,14 +178,29 @@ conda install -c bioconda mafft
 Running MAFFT
 
 ```shell
-mafft --auto nrlsu.fasta > nrlsu_aligned #-- auto flag in the command ensures MAFFT selects the most appropriate alignment algorithm for a given set of sequences
+mafft --auto nrlsu.fasta > nrlsu_aligned_mafft #-- auto flag in the command ensures MAFFT selects the most appropriate alignment algorithm for a given set of sequences
 
-mafft nrlsu_aligned #shows alignments in the terminal
+mafft nrlsu_aligned_mafft #shows alignments in the terminal
 ```
 
 ### 3.2 - Aligning via ClustalW
 
 nrlsu.fasta is the file I use for both alignments. Found in the "cui_am5_working/data" folder
+
+#### Clustal W summary
+
+| Software | Description | Strengths | Weaknesses | Assumptions | My Choices |
+| -------- | ----------- | --------- | ---------- | ----------- | ---------- |
+| Clustal W | Progressive MSA method boosting sensitivity through dynamic use of weights and costs | Creates an alignment that more accurately represents mutation types and the probability of their occurence in different areas of the genome | Still deals with the local minimum issue that comes with PMSAs and more options add more difficulty in choosing appropriate alignment parameters | 
+
+
+- Individual weights are assigned to each sequence during partial alignment to differentiate between more similar sequences and more divergent ones
+- Matrices for amino acid substitution are varied at different alignment stages according to the level of divergence between sequences that are being aligned
+- Dynamically altering gap penalties based on the actual biophysical interaction of amino acids and nucleotides
+
+- Assumptions:
+  - For all PMSA: homolous sequences are evolutionarily related
+  - In protein alignments, gaps do not occur randomly
 
 ```shell
 grep ">" nrlsu.fasta | wc -l #checks how many sequences you have (should be 158)
