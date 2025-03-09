@@ -26,6 +26,8 @@ I then went through and deleted specimens until there were only three specimens 
 - This gave me a set with 158 total specimens
 While this brings the total number of sequences to (158x5=) 790 however I only have to work with one loci at a time so I don't think my computing time will be much longer than anyone else.
 
+- Finally just chose 23 samples from the set and 1 outgroup
+
 ### 1.3 - Working with git
 
 This is necessary for backing up my work in git and for Claudia to be able to follow my work along.
@@ -93,7 +95,7 @@ Each accession number is on its own seperate line in the .txt files. Below is a 
 
 ```shell
 #First I move into the directory with the .txt files
-cd /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/cui_am5_raw
+cd /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working
 
 #to read the text files in the terminal
 cat loci_acc.txt # swap "loci" in "loci_acc.txt" with name of loci in question
@@ -103,13 +105,14 @@ Downloading proper tools for process
 
 ```shell
 # Installing entrez direct as the means of downloading fasta files
-sh -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
-sh -c "$(wget -q https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh -O -)"
+bash -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
 ```
 
 Executing 2.2
 
 ```shell
+#Enter correct directory
+cd /Users/hensley/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/3loci_acc
 #This script automates the process so I don't have to download each individual fasta manually
 accs=$(cat "loci_acc.txt") #swap "loci" with correct loci name
 for i in $accs
@@ -125,27 +128,34 @@ efetch -db nuccore -format fasta -id $i > $i.fasta #uses same other commands as 
 Now we have a bunch of .fasta files in with the accession .txt files so need to organize
 
 ```shell
-cd cui_am5_raw
+cd 3loci_24samp_working
 mkdir fasta #only do once
 cd fasta
-mkdir nrlsu_fasta #do for each loci
-cd .. #Should put you back into cui_am5_raw
+mkdir lsu_fastas
+mkdir rpb2_fastas
+mkdir tef1a_fastas
+cd .. #Should put you back into 3loci_24samp
 mv *.fasta fasta #Moves all fasta files into fasta folder
 cd fasta
-mv *.fasta nrlsu_fasta #Moves all fasta files in fasta folder into nrlsu folder. Make sure to put correct loci in corresponding folder
+mv *.fasta lsu_fasta #Moves all fasta files in fasta folder into nrlsu folder. Make sure to put correct loci in corresponding folder
 ```
 
-- When downloading the "nrlsu" fastas there were four errors "missing argument describing data source".
-  - 2 errors for btub
-  - 1 error for its
-  - 0 errors for rpb2
-  - 0 errors for tef1a
-    - However, all accessions downloaded a .fasta file so hoping there is no issue moving forward
-- Repeated process above for the remaining four loci
-  - At this point the ~/BOT563_MH/data/cui_am5_working/fasta folder should contain 5 separate folders each containing the .fasta files of the sequences corresponding to each loci
-- There was also an empty .fasta file that was made for each loci so I deleted that one
-  - each folder should contain only 158 fasta files
-- Finally, I transfer the 'fasta' folder from cui_am5_raw to cui_am5_working
+```shell
+cd 3loci_24samp
+cat *.fasta > "loci".fasta"
+#takes all .fasta files and compiles them into single file called ""loci".fasta"
+#Be sure only the .fastas of the correct loci are in the folder. All .fastas will be compiled
+```
+
+At this point, the .txt files are in 3loci_24samp_working
+this is where .fasta files. Once done, the .txt were moved to 3loci_acc
+
+```shell
+cd /3loci_24samp_working
+mkdir 3loci_acc
+mv *.txt 3loci_acc
+```
+
 
 ```shell
 cd /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/cui_am5_raw
@@ -160,13 +170,6 @@ Now I am going to try to align the nrlsu sequences in ~/BOT563_MH/data/cui_am5_w
 
 This is a trial run of sorts so have to go back to make adjustments on the software's assumptions
 
--First thing I need to do is compile the nrlsu fasta folder into a single fasta file
-
-```shell
-cd
-cat *.fasta > /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/cui_am5_working/fasta/nrlsu.fasta
-```
-
 ### 3.1 - Aligning via MAFFT
 
 Make sure it is downloaded
@@ -178,7 +181,7 @@ conda install -c bioconda mafft
 Running MAFFT
 
 ```shell
-mafft --auto nrlsu.fasta > nrlsu_aligned_mafft #-- auto flag in the command ensures MAFFT selects the most appropriate alignment algorithm for a given set of sequences
+mafft --auto lsu.fasta > lsu_aligned_mafft #-- auto flag in the command ensures MAFFT selects the most appropriate alignment algorithm for a given set of sequences
 
 mafft nrlsu_aligned_mafft #shows alignments in the terminal
 ```
@@ -191,20 +194,11 @@ nrlsu.fasta is the file I use for both alignments. Found in the "cui_am5_working
 
 | Software | Description | Strengths | Weaknesses | Assumptions | My Choices |
 | -------- | ----------- | --------- | ---------- | ----------- | ---------- |
-| Clustal W | Progressive MSA method boosting sensitivity through dynamic use of weights and costs | Creates an alignment that more accurately represents mutation types and the probability of their occurence in different areas of the genome | Still deals with the local minimum issue that comes with PMSAs and more options add more difficulty in choosing appropriate alignment parameters | 
-
-
-- Individual weights are assigned to each sequence during partial alignment to differentiate between more similar sequences and more divergent ones
-- Matrices for amino acid substitution are varied at different alignment stages according to the level of divergence between sequences that are being aligned
-- Dynamically altering gap penalties based on the actual biophysical interaction of amino acids and nucleotides
-
-- Assumptions:
-  - For all PMSA: homolous sequences are evolutionarily related
-  - In protein alignments, gaps do not occur randomly
+| Clustal W | Progressive MSA method boosting sensitivity through dynamic use of weights and costs | Creates an alignment that more accurately represents mutation types and the probability of their occurence in different areas of the genome | Still deals with the local minimum issue that comes with PMSAs and more options add more difficulty in choosing appropriate alignment parameters | Homologous sequences are evolutionarily related and in protein alignments, gaps do not occur randomly | TYPE=DNA GAPOPEN=1 GAPEXT=1
 
 ```shell
-grep ">" nrlsu.fasta | wc -l #checks how many sequences you have (should be 158)
-clustalw2 -ALIGN -INFILE=nrlsu.fasta -OUTFILE=nrlsu_aligned_clustal.fasta -OUTPUT=FASTA
+grep ">" lsu.fasta | wc -l #checks how many sequences you have (should be 24)
+clustalw2 -ALIGN -INFILE=lsu.fasta -OUTFILE=lsu_aligned_clustal.fasta -OUTPUT=FASTA
 ```
 
 - This initial run gave an alignment score of 17900898
@@ -212,4 +206,90 @@ clustalw2 -ALIGN -INFILE=nrlsu.fasta -OUTFILE=nrlsu_aligned_clustal.fasta -OUTPU
 - The alignment score will change with the parameters you manipulate
 - Want the highest score but confirm this by reading the alignment manual
 
-GO THROUGH DOCUMENTATION FOR THE ALIGNMENTS AND MANIPULATE THE PARAMETERS ACCORDINGLY
+## 4 - Creating distance and parsimony trees in R
+
+Distance and parsimony are not really used for nything besides creating initial trees that bayesian and likelihood methods use as an initial tree
+That said, still good to know how they work and are good for quick inference because their trees will tell you if there is a major problem with your data
+
+### 4.1 - Distance method using ape
+
+Install necessary packages
+
+```shell
+install.packages("adegenet", dep=TRUE)
+library(ape) #This basically activates in current project
+library(adegenet)
+```
+
+Loading data and plotting tree
+
+```shell
+dna <- fasta2DNAbin(file="~/lsu_aligned_clustal.fasta")
+D <- dist.dna(dna, model="TN93") #computing genetic distances with Tamura and Nei 1993 model
+tre <- nj(D) #getting the actual tree using neighbor-joining
+tre <- ladderize(tre) #reorganizes tree to get a ladderized effect
+plot(tre, cex=.6,)
+```
+
+Ths tree given had the outgroup placed within the tree which is not a good start. 
+Used code below to reroot tree and specify the outgroup
+
+```shell
+root(tre, outgroup="KT833807.1", resolve.root = TRUE) #KT833807 is the accession number for the lsu loci of my outgroup Limacella
+```
+
+Now my tree is rooted properly however, I still am not sure if my data is okay if I have to specify the outgroup
+I feel like it should be able to distinguish the outgroup.
+
+### 4.2 - Maximum Parsimony using phangorn
+
+| Software | Description | Strengths | Weaknesses | Assumptions | My Choices |
+| -------- | ----------- | --------- | ---------- | ----------- | ---------- |
+| Phangorn | Phangorn allows for the reconstruction of phylogenies using distance, parsimony, or likelihood. It also offers the possibility to estimate mixture and partition models | Seems to have more functionality than ape allowing for multiple different construction methods and the ability to compare them | Simplistic model of evolution, statistically inconsistent | Assumes rate of evolution is slow.
+
+Installing needed packages
+
+```shell
+install.packages("adegenet", dep=TRUE)
+install.packages("phangorn", dep=TRUE)
+```
+
+Activating packages
+
+```shell
+library(ape)
+library(adegenet)
+library(phangorn)
+```
+
+Loading in data
+
+```shell
+dna <- fasta2DNAbin(file=/data/3loci_24samp_working/fasta/lsu_aligned_clustal.fasta)
+dna2 <- as.phyDat(dna)
+```
+
+Designating a starting tree to search tree space and compute parsimony score
+
+```shell
+tre.ini <- nj(dist.dna(dna,model="raw"))
+parsimony(tre.ini, dna2)
+```
+
+Parisomony score:673
+
+Searching for tree with maximum parsimony
+
+```shell
+tre.pars <- optim.parsimony(tre.ini, dna2)
+```
+
+Final pscore of 668 after 2 nni operations
+
+Plot tree
+
+```shell
+plot(tre.pars, cex=0.6)
+```
+
+Tree again looks rather horrible. Tried to root tree using code in ape but still doesn't look great and didn't designate the correct outgroup
