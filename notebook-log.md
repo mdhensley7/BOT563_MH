@@ -224,7 +224,7 @@ library(adegenet)
 Loading data and plotting tree
 
 ```shell
-dna <- fasta2DNAbin(file="~/lsu_aligned_clustal.fasta")
+dna <- fasta2DNAbin(file="fasta/lsu_aligned_clustal.fasta")
 D <- dist.dna(dna, model="TN93") #computing genetic distances with Tamura and Nei 1993 model
 tre <- nj(D) #getting the actual tree using neighbor-joining
 tre <- ladderize(tre) #reorganizes tree to get a ladderized effect
@@ -235,7 +235,8 @@ Ths tree given had the outgroup placed within the tree which is not a good start
 Used code below to reroot tree and specify the outgroup
 
 ```shell
-root(tre, outgroup="KT833807.1", resolve.root = TRUE) #KT833807 is the accession number for the lsu loci of my outgroup Limacella
+tre2 <- root(tre, outgroup="KT833807.1", resolve.root = TRUE) #KT833807 is the accession number for the lsu loci of my outgroup Limacella
+plot(tre2, cex=0.6)
 ```
 
 Now my tree is rooted properly however, I still am not sure if my data is okay if I have to specify the outgroup
@@ -265,7 +266,7 @@ library(phangorn)
 Loading in data
 
 ```shell
-dna <- fasta2DNAbin(file=/data/3loci_24samp_working/fasta/lsu_aligned_clustal.fasta)
+dna <- fasta2DNAbin(file="data/3loci_24samp_working/fasta/lsu_aligned_clustal.fasta)
 dna2 <- as.phyDat(dna)
 ```
 
@@ -292,4 +293,125 @@ Plot tree
 plot(tre.pars, cex=0.6)
 ```
 
-Tree again looks rather horrible. Tried to root tree using code in ape but still doesn't look great and didn't designate the correct outgroup
+Tree again looks rather horrible. So rooted it like the distance tree
+
+```shell
+tre.pars2 <- root(tre.pars, outgroup="KT833807.1", resolve.root = TRUE) #KT833807 is the accession number for the lsu loci of my outgroup Limacella
+plot(tre.pars2, cex=0.6)
+```
+
+## 5 - Creating maximum likelihood trees using RAxML and IQTREE
+
+### 5.1 - Quick ML notes
+
+Maximum likelihood is a method of finding the probability of a tree given the data. Basically, we search the tree space to find the tree that has the highest probability of fitting the data.
+
+The 4 most common things affecting ML
+1. The starting tree
+    - Maximum likelihood requires a starting tree to begin processing
+    - Can be a random tree but lots of models will start with a tree generated with distance or parsimony
+    - Also best practise to do multiple searches using multiple topologically different starting trees
+2. The chosen model
+    - Affects the actual tree landscape
+    - May lead to identifiability
+    - Might optimize the wrong function
+3. The data itself
+    - "garbage in, garbage out"
+    - May lead to lack of signal
+    - Also may lead to identifiability
+4. Convergence
+    - When do we estimate convergence and stop the search?
+
+### 5.2 - Assumptions of ML
+
+All ML models make these assumptions
+1. The mutation process is the same for every branch of the tree
+2. Sites evolve independently
+3. All sites evolve the same
+    - Some models can break this assumption by applying Γ model of rate heterogeneity
+
+### 5.3 - For major influencers on ML performance
+
+1. Starting tree selection
+    - Affects optimization as possible to get stuck in poor likelihood region
+    - Bad tree can slow process or end in a suboptimal tree
+2. Model Chosen
+    - Affects shape of treescape we optimize
+    - Could optimize wrong function
+    - Identifiability
+3. Data
+    - Lack of signal due to small sample size or poorly chosen sequence region
+    - Identifiability
+4. Convergence
+    - When to terminate exploration of treescape?
+    - Affects optimization
+
+### 5.4 - iqtree overview
+
+| Software | Description | Strengths | Weaknesses | Assumptions | My Choices |
+| -------- | ----------- | --------- | ---------- | ----------- | ---------- |
+| IQtree2 | Fast, stochastic algorithm for estimating ML phylogenies using bootstrap resampling to randomly reasses sites, rebuild tree, and provie branch support via a bootstrap value. |  1. Evaluates different substitution models to determine best fit for data. 2. Sotachistic algorithm usage helps escape local optima. 3. Allows for reversible and non-reversible models  | 1. More computationally and memory expensive. | Assumptions in 5.2 | Used GTR + GAMMA with n=1000 replicates like stated in the Cui et al 2018 paper |
+
+### 5.5 - Downloading software
+
+Both packages had a necessary online download
+
+```shell
+conda install -c bioconda iqtree
+```
+
+### 5.6 - Running iqtree2
+
+1. Generating a tree with just the preset parameters
+
+```shell
+cd ~/BOT563_MH/data/3loci_24samp_working/fasta
+iqtree2 -s lsu_aligned_clustal.fasta
+```
+
+ML score of -4480.739
+
+2. Generating a tree with my chosen parameters
+
+```shell
+iqtree2 -s lsu_aligned_clustal.fasta -m GTR+G -alrt 1000 -nt AUTO
+```
+ML score of -4483.217 so actually worse than just using preset parameters!
+
+3. Generating a tree like above but increasing iterations to 10,000
+
+```shell
+iqtree2 -s lsu_aligned_clustal.fasta -m GTR+G -alrt 10000 -nt AUTO
+```
+ML score of -4483.222 somehow got even worse... Maybe it's not that big of a deal if they are this close together and best to look at the trees.
+
+Or maybe this shows an identifiability plateau?
+
+### 5.7 - Tree visualization for iqtree
+
+1. Primary way to just open the .treefile produced by iqtree in Figtree
+    - Usually will stick with FigTree as it is a good tree visualization tool 
+
+2. Can also visualize tree in R
+
+```shell
+library(ape) #Important to activate these packages even just for tree visualization
+library(adegenet)
+tre <- read.tree(text="parenthetical form")
+#Access the parenthetical form by right clicking on the .bionj file go to "open file with" > textedit
+#Copy the parenthetical including ";" and paste in the above code 
+tre2 <- root(tre, outgroup="KT833807.1", resolve.root=TRUE)
+plot(tre2, cex=.6)
+```
+
+### 5.8 - IQtree file organization
+
+- Files from initial tree with preset parameters are found in ~/3loci_24samp_working/iqtree/preset
+- Files from the third tree made are found in ~/3loci_24samp_working/iqtree/gtr+r_10000
+
+### 5.9 - RAxML information (did not use for HW)
+
+Keep in mind RAxML can only be run in the actual folder with the download (found Desktop/phylogenetics_software/maximum_likelihood)
+
+
+
