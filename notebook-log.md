@@ -413,5 +413,145 @@ plot(tre2, cex=.6)
 
 Keep in mind RAxML can only be run in the actual folder with the download (found Desktop/phylogenetics_software/maximum_likelihood)
 
+## 6 - Bayesian phylogenetics
 
+### 6.1 - Why bayesian?
+
+- Bayesian inference allows us to refine Maximum Likelihood by implenting any previous knowledge we have about our data to influence the result
+    - The previous knowledge is called the prior
+- If we do not have any prior, we can still use what is called an uniformative prior.
+    - Why not just stick with Maximum Likelihood if the prior is uninformative you may ask. Great question!
+        - Bayesian phylogenetics also gives us an idea of how reliable the results are based on the variance of the "global" maximum the tree search comes to.
+
+### 6.2 - What tools do I need?
+
+- Beast2
+    - This is likely the main tool you will use to create high quality tree so learn it well
+
+- Mr. Bayes
+
+### 6.3 Mr. Bayes
+
+#### Software summary
+
+| Software | Description | Strengths | Weaknesses | Assumptions | My Choices |
+| -------- | ----------- | --------- | ---------- | ----------- | ---------- |
+| MrBayes3 | Performs Bayesian inference and gives the user felxibility in model selection, choice of prior, and a diversity of parameters to manipulate. |  1. Flexibilty in parameter and prior selection 2. Model selection 3. Uses both MCMC and Metropolis-coupled MCMC; the latter of which allows for heated chains allowing for a more even traversal of tree space (the algorithm won't be as likely to get caught in a local maximum) | Extremely computationally and memory intensive; often need to send to computing servers/clusters  | Assume the prior given is accurate and appropriate to specific data set | I did one run with general class-set parameters and one run following parameters given in B.E. Wolfe paper linked below |
+
+#### Installation process
+
+-I don't know the difference but the first shell is the installation using the directions given at the mrbayes source github. The second method is defined in the 563 class directions
+
+```shell
+git clone --depth=1 https://github.com/NBISweden/MrBayes.git
+cd MrBayes ##PATH coding_tools/phylogenetics_software/MrBayes
+./configure
+make && sudo make install
+```
+
+#### Mr. Bayes performs the analysis on an aligned .nexus file
+
+Below is the code needed to convert aligned .fasta file into .nexus file (biopython) needed
+- seqmagick is a handy dandy tool for quick and reliable file conversion for sequences
+    - Super cool. it will also convert DNA->RNA RNA->protein or even DNA->protein
+    - Just type "seqmagick convert" into terminal to see usages
+
+```shell
+conda install seqmagick #make sure you have it
+seqmagick convert --output-format nexus --alphabet dna lsu_aligned_clustal.fasta lsu_aligned_clustal.nex
+```
+Now that we have the correct file format, we can move it into our "mrbayes" folder and run Mr Bayes
+- We need to create a block that specifies all the parameters, priors, etc. for our Mr Bayes run
+- Block is created in a separate .txt file
+
+```shell
+nano mbblock_general.txt
+touch mbblock_general.txt
+```
+Below is the general format of the text going in the .txt file
+- prset = setting up priors
+- lset = defining substitution
+- mcmp = setting for the MCMC
+- ngen = should be 1,000,000 or more
+- mcmc; = the command that actually runs the MCMC
+- sumt; = Tells mrbayes to obtain a summary tree 
+
+begin mrbayes;  
+ set autoclose=yes;  
+ prset brlenspr=unconstrained:exp(10.0);  
+ prset shapepr=exp(1.0);  
+ prset tratiopr=beta(1.0,1.0);  
+ prset statefreqpr=dirichlet(1.0,1.0,1.0,1.0);  
+ lset nst=2 rates=gamma ngammacat=4;  
+ mcmcp ngen=1000000 samplefreq=10 printfreq=100 nruns=1 nchains=3 savebrlens=yes;  
+ outgroup KT833807.1; <mark>specify your correct outgroup</mark>  
+ mcmc;  
+ sumt;  
+end;  
+
+##### Once .txt is inhabited by wanted code, append the file to end of the .nex "nexus" file
+
+```shell
+cat lsu_aligned_clustal.nex mbblock_general.txt > lsu_aligned_clustal_mb.nex
+```
+Finally, run the program
+
+```shell
+mb lsu_aligned_clustal_mb.nex
+```
+
+##### First Mr Bayes run stored in ~/mrbayes/mbrun1
+- Has pretty good support values except for a early diverging node at 53 which is not super ideal
+- Need to discuss more with Claudia to gain an understanding of these numbers
+
+##### Wolfe, Pringle paper gives parameters used for an Amanita phylogeny inferred by Mr Bayes:
+- Parameters used:
+    - GTR+I+gamma
+    - ngen = 10,000,000
+    - 4 chains
+    - Tree sampled every 1,000 generations
+    - burnin = 2.5 million generations (default setting for Mr Bayes)
+- <mark>Interesting note:</mark> 
+    - ran phylogeney multiple times with different outgroups to make sure the tree didn't change
+
+link to paper : https://www.researchgate.net/publication/229427712_The_Irreversible_Loss_of_a_Decomposition_Pathway_Marks_the_Single_Origin_of_an_Ectomycorrhizal_Symbiosis
+
+Below is the new mrbayes block to copy the method used for building an already published Amanita phylogeny:
+
+begin mrbayes;  
+ set autoclose=yes;  
+ prset brlenspr=unconstrained:exp(10.0);  
+ prset shapepr=exp(1.0);  
+ prset tratiopr=beta(1.0,1.0);  
+ prset statefreqpr=dirichlet(1.0,1.0,1.0,1.0);  
+ lset nst=6 rates=invgamma ngammacat=4;  
+ mcmcp ngen=10000000 samplefreq=1000 printfreq=10000 nruns=1 nchains=4 savebrlens=yes;  
+ outgroup KT833807.1; <mark>specify your correct outgroup</mark>  
+ mcmc;  
+ sumt;  
+end;
+
+- Append to .nex file using
+
+```shell
+cat lsu_aligned_clustal.nex mbblock_wolfe.txt > lsu_wolfe_mb.nex
+```
+
+- Run mrbayes
+
+```shell
+mb lsu_wolfe_mb.nex
+```
+
+## 7 - Coalescence
+
+Coalescence to concatenation is what BBQ potato chips are to regular potato chips. Sure regular potato chips are fine and have their moments to shine but BBQ chips are just overall better, suit most ocassions, and will usually end up giving us more robust species trees.
+
+Concatenation assumes that all genes within a species genome have undegone the same rate of evolution which is usually quite false. Incomplete Lineage Sorting (ILS), gene/genome duplication, and horizontal gene transfer are rather common occurances that lead to differences in how genes evolved.
+
+The Multispecies Coalescent Models allows us to take the trees generated by a group of genes and infer the species tree.
+
+### 7.3 - Handy-dandy tools to use
+
+#### ASTRAL
 
