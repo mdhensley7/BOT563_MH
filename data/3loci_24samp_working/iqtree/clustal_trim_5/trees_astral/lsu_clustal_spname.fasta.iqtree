@@ -1,0 +1,158 @@
+IQ-TREE 2.4.0 built Feb 12 2025
+
+Input file name: lsu_clustal_spname.fasta
+Type of analysis: tree reconstruction
+Random seed number: 960505
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 24 sequences with 866 nucleotide sites
+Number of constant sites: 622 (= 71.8245% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 622 (= 71.8245% of all sites)
+Number of parsimony informative sites: 176
+Number of distinct site patterns: 268
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 2.0517
+  A-G: 15.4124
+  A-T: 3.2815
+  C-G: 1.4903
+  C-T: 26.2715
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2737
+  pi(C) = 0.1805
+  pi(G) = 0.3028
+  pi(T) = 0.243
+
+Rate matrix Q:
+
+  A    -1.005   0.06375    0.8035    0.1373
+  C   0.09667    -1.273    0.0777     1.099
+  G    0.7262   0.04631   -0.8143   0.04183
+  T    0.1546    0.8164   0.05214    -1.023
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.1791
+
+ Category  Relative_rate  Proportion
+  1         0.0002374      0.25
+  2         0.02266        0.25
+  3         0.327          0.25
+  4         3.65           0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3962.3126 (s.e. 155.6138)
+Unconstrained log-likelihood (without tree): -3221.5964
+Number of free parameters (#branches + #model parameters): 54
+Akaike information criterion (AIC) score: 8032.6252
+Corrected Akaike information criterion (AICc) score: 8039.9495
+Bayesian information criterion (BIC) score: 8289.8750
+
+Total tree length (sum of branch lengths): 0.9354
+Sum of internal branch lengths: 0.2766 (29.5746% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0012) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'L_delicata' is drawn at root
+Numbers in parentheses are SH-aLRT support (%)
+
++-------------------------------L_delicata
+|
+|       +---------------------A_eijii
+|  +----| (31.5)
+|  |    +---------------------------------------A_avellaneosquamosa
++--| (65.8)
+|  |                              +--A_virosa
+|  |                           +--| (73.9)
+|  |                           |  +------A_suballiacea
+|  |           +---------------| (100)
+|  |           |               +--A_ocreata
+|  |     +-----| (90)
+|  |     |     |              +--------A_aspericeps
+|  |     |     |           +--| (62.6)
+|  |     |     |           |  +--A_cinereopannosa
+|  |     |     |  +--------| (95.3)
+|  |     |     |  |        +---------------------------------A_strobiliformis
+|  |     |     +--| (6.7)
+|  |     |        |                +--A_citrinoannulata
+|  |     |        |             +--| (58.6)
+|  |     |        |             |  +--A_flavipes
+|  |     |        |       +-----| (95.7)
+|  |     |        |       |     +--A_citrinoindusiata
+|  |     |        +-------| (97.1)
+|  |     |                +--------A_citrina
+|  +-----| (26.6)
+|        +-----------------------------------A_caojizong
+|
+|                         +--A_altipes
+|                      +--| (87.5)
+|                      |  +---A_pantherina
+|                   +--| (53.1)
+|                   |  +----------------------------A_farinosa
+|      +------------| (99.6)
+|      |            +--------A_elata
++------| (94.8)
+       |                              +--A_aff_brunneofuliginea
+       |                           +--| (92.8)
+       |                           |  +**A_brunneofuliginea
+       |                        +**| (0)
+       |                        |  |  +--A_battarrae
+       |                        |  +--| (78.9)
+       |                        |     +---A_fulva
+       |        +---------------| (99.6)
+       |        |               +-----A_chiui
+       +--------| (92.6)
+                +-----------------------A_imazekii
+
+Tree in newick format:
+
+(L_delicata:0.0731657090,((A_eijii:0.0517574370,A_avellaneosquamosa:0.0912872591)31.5:0.0123784808,((((A_virosa:0.0065983588,A_suballiacea:0.0158289333)73.9:0.0027214575,A_ocreata:0.0014762824)100:0.0366613615,(((A_aspericeps:0.0207192338,A_cinereopannosa:0.0068958642)62.6:0.0084530003,A_strobiliformis:0.0772448485)95.3:0.0209988112,(((A_citrinoannulata:0.0084639880,A_flavipes:0.0034309777)58.6:0.0038438588,A_citrinoindusiata:0.0048308263)95.7:0.0147056976,A_citrina:0.0217282351)97.1:0.0191685401)6.7:0.0018972912)90:0.0156230307,A_caojizong:0.0817938128)26.6:0.0140462808)65.8:0.0053154498,((((A_altipes:0.0069704994,A_pantherina:0.0092877003)87.5:0.0063888363,A_farinosa:0.0661203344)53.1:0.0016637569,A_elata:0.0208240460)99.6:0.0314858351,((((A_aff_brunneofuliginea:0.0012625987,A_brunneofuliginea:0.0000010000)92.8:0.0044231297,(A_battarrae:0.0072387722,A_fulva:0.0110660909)78.9:0.0025374020)0:0.0000010000,A_chiui:0.0152599903)99.6:0.0368935441,A_imazekii:0.0554923016)92.6:0.0208630320)94.8:0.0165648236);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t lsu_clustal_spname.fasta.treefile -m "GTR{2.05169,15.4124,3.2815,1.49026,26.2715}+F{0.273683,0.180492,0.30283,0.242995}+G4{0.179114}" --length 866
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s lsu_clustal_spname.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s lsu_clustal_spname.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Apr 17 19:33:24 2025
+Total CPU time used: 21.7334 seconds (0h:0m:21s)
+Total wall-clock time used: 22.4541 seconds (0h:0m:22s)
+

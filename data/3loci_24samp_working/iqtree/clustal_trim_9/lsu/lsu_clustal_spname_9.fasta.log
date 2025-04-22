@@ -1,0 +1,130 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Feb 12 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Mikeybook.local (SSE4.2, 24 GB RAM)
+Command: iqtree2 -s lsu_clustal_spname_9.fasta -m GTR+G -alrt 1000 -nt AUTO
+Seed:    731222 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 22 11:32:58 2025
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file lsu_clustal_spname_9.fasta ... Fasta format detected
+Reading fasta file: done in 0.000389099 secs using 64.51% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 24 sequences with 824 columns, 235 distinct patterns
+170 parsimony-informative, 65 singleton sites, 589 constant sites
+                        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 4.29153e-05 secs using 62.91% CPU
+   1  L_delicata               19.42%    passed     38.62%
+   2  A_eijii                   0.85%    passed     98.17%
+   3  A_virosa                  0.00%    passed     97.79%
+   4  A_ocreata                 0.00%    passed     98.81%
+   5  A_suballiacea             0.00%    passed     97.63%
+   6  A_aspericeps              0.36%    passed     98.93%
+   7  A_cinereopannosa          0.12%    passed     93.24%
+   8  A_strobiliformis          0.36%    passed     60.85%
+   9  A_citrinoannulata         0.00%    passed     96.42%
+  10  A_flavipes                0.12%    passed     98.71%
+  11  A_citrinoindusiata        0.00%    passed     93.79%
+  12  A_citrina                 0.00%    passed     97.28%
+  13  A_caojizong               0.12%    passed     84.93%
+  14  A_avellaneosquamosa       0.24%    passed     26.17%
+  15  A_altipes                 0.12%    passed     98.71%
+  16  A_pantherina              0.24%    passed     98.79%
+  17  A_elata                   0.12%    passed     95.71%
+  18  A_farinosa                0.36%    passed     91.08%
+  19  A_aff_brunneofuliginea    0.00%    passed     97.77%
+  20  A_brunneofuliginea        0.12%    passed     97.67%
+  21  A_battarrae               0.00%    passed     97.91%
+  22  A_chiui                   0.00%    passed     94.82%
+  23  A_fulva                   0.00%    passed     92.11%
+  24  A_imazekii                0.12%    passed     95.72%
+****  TOTAL                     0.95%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+2011 trees examined
+Threads: 1 / Time: 8.000 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -5638
+Threads: 2 / Time: 13.266 sec / Speedup: 0.603 / Efficiency: 30% / LogL: -5638
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -4243.497
+2. Current log-likelihood: -3838.472
+3. Current log-likelihood: -3809.602
+4. Current log-likelihood: -3808.861
+Optimal log-likelihood: -3808.834
+Rate parameters:  A-C: 1.95236  A-G: 13.37191  A-T: 2.37310  C-G: 1.36948  C-T: 24.46368  G-T: 1.00000
+Base frequencies:  A: 0.275  C: 0.182  G: 0.301  T: 0.242
+Gamma shape alpha: 0.180
+Parameters optimization took 4 rounds (0.045 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.00108504 secs using 98.24% CPU
+Computing ML distances took 0.001132 sec (of wall-clock time) 0.001092 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 1.90735e-05 secs using 73.4% CPU
+Computing RapidNJ tree took 0.000079 sec (of wall-clock time) 0.000098 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3806.738
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.054 second
+Computing log-likelihood of 98 initial trees ... 0.077 seconds
+Current best score: -3795.461
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3793.113
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -3792.759
+Iteration 10 / LogL: -3792.764 / Time: 0h:0m:21s
+Iteration 20 / LogL: -3799.840 / Time: 0h:0m:21s
+Finish initializing candidate tree set (5)
+Current best tree score: -3792.759 / CPU time: 0.316
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3796.662 / Time: 0h:0m:21s (0h:0m:54s left)
+Iteration 40 / LogL: -3793.138 / Time: 0h:0m:21s (0h:0m:35s left)
+Iteration 50 / LogL: -3796.664 / Time: 0h:0m:22s (0h:0m:23s left)
+Iteration 60 / LogL: -3792.775 / Time: 0h:0m:22s (0h:0m:16s left)
+Iteration 70 / LogL: -3793.132 / Time: 0h:0m:22s (0h:0m:10s left)
+Iteration 80 / LogL: -3814.573 / Time: 0h:0m:22s (0h:0m:6s left)
+Iteration 90 / LogL: -3793.134 / Time: 0h:0m:22s (0h:0m:3s left)
+Iteration 100 / LogL: -3793.132 / Time: 0h:0m:22s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:0m:22s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3792.759
+Optimal log-likelihood: -3792.758
+Rate parameters:  A-C: 1.98024  A-G: 14.26122  A-T: 2.46173  C-G: 1.33522  C-T: 24.88471  G-T: 1.00000
+Base frequencies:  A: 0.275  C: 0.182  G: 0.301  T: 0.242
+Gamma shape alpha: 0.183
+Parameters optimization took 1 rounds (0.003 sec)
+BEST SCORE FOUND : -3792.758
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.140 sec.
+Total tree length: 0.956
+
+Total number of iterations: 104
+CPU time used for tree search: 1.351 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.364 sec (0h:0m:1s)
+Total CPU time used: 21.782 sec (0h:0m:21s)
+Total wall-clock time used: 22.832 sec (0h:0m:22s)
+
+Analysis results written to: 
+  IQ-TREE report:                lsu_clustal_spname_9.fasta.iqtree
+  Maximum-likelihood tree:       lsu_clustal_spname_9.fasta.treefile
+  Likelihood distances:          lsu_clustal_spname_9.fasta.mldist
+  Screen log file:               lsu_clustal_spname_9.fasta.log
+
+Date and Time: Tue Apr 22 11:33:21 2025

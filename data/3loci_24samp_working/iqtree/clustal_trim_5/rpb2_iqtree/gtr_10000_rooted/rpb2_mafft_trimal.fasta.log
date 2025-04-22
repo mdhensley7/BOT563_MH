@@ -1,0 +1,128 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Feb 12 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Mikeybook.local (SSE4.2, 24 GB RAM)
+Command: iqtree2 -s rpb2_mafft_trimal.fasta -o KT833822.1 -m GTR+G -alrt 10000 -nt AUTO
+Seed:    519293 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Apr 13 15:17:44 2025
+Kernel:  SSE2 - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file rpb2_mafft_trimal.fasta ... Fasta format detected
+Reading fasta file: done in 0.000415802 secs using 43.05% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 24 sequences with 684 columns, 294 distinct patterns
+235 parsimony-informative, 35 singleton sites, 414 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.69549e-05 secs using 56.83% CPU
+   1  JQ031110.1    0.00%    passed     46.18%
+   2  JQ031112.1    0.15%    passed     89.67%
+   3  KJ466600.1    1.02%    passed     70.43%
+   4  KJ466607.1    0.88%    passed     94.90%
+   5  KJ466647.1    0.88%    passed     93.02%
+   6  KJ466664.1    0.88%    passed     97.03%
+   7  KR824789.1    4.82%    passed     84.24%
+   8  KT833822.1    0.00%    passed     14.49%
+   9  MH485858.1    4.53%    passed     96.28%
+  10  MH485864.1    1.75%    passed     98.40%
+  11  MH485875.1    1.75%    passed     93.94%
+  12  MH485886.1    1.75%    passed     93.50%
+  13  MH485905.1    1.75%    passed     99.80%
+  14  MH485930.1    1.75%    passed     80.25%
+  15  MH485932.1    1.75%    passed     98.37%
+  16  MH485937.1    1.75%    passed     97.08%
+  17  MH485938.1    1.75%    passed     66.95%
+  18  MH485948.1    1.75%    passed     70.58%
+  19  MH485963.1    1.75%    passed     98.76%
+  20  MH485965.1    6.87%    passed     99.74%
+  21  MH485979.1    2.78%    passed     80.33%
+  22  MH486021.1    1.75%    passed     98.84%
+  23  MH486052.1    1.75%    passed     24.93%
+  24  MH486298.1    1.75%    passed     86.84%
+****  TOTAL         1.90%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+1334 trees examined
+Threads: 1 / Time: 8.002 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -7299
+Threads: 2 / Time: 12.415 sec / Speedup: 0.645 / Efficiency: 32% / LogL: -7299
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5659.804
+2. Current log-likelihood: -5052.656
+3. Current log-likelihood: -5016.091
+4. Current log-likelihood: -5014.576
+Optimal log-likelihood: -5014.551
+Rate parameters:  A-C: 4.33038  A-G: 25.35627  A-T: 4.67811  C-G: 4.43360  C-T: 44.99368  G-T: 1.00000
+Base frequencies:  A: 0.272  C: 0.206  G: 0.271  T: 0.251
+Gamma shape alpha: 0.186
+Parameters optimization took 4 rounds (0.049 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000925064 secs using 98.7% CPU
+Computing ML distances took 0.000972 sec (of wall-clock time) 0.000942 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 2.00272e-05 secs using 79.89% CPU
+Computing RapidNJ tree took 0.000078 sec (of wall-clock time) 0.000101 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -5019.471
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.063 second
+Computing log-likelihood of 98 initial trees ... 0.095 seconds
+Current best score: -5012.095
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5009.093
+Iteration 10 / LogL: -5009.893 / Time: 0h:0m:20s
+Iteration 20 / LogL: -5009.803 / Time: 0h:0m:20s
+Finish initializing candidate tree set (2)
+Current best tree score: -5009.093 / CPU time: 0.426
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -5010.514 / Time: 0h:0m:21s (0h:0m:51s left)
+Iteration 40 / LogL: -5009.094 / Time: 0h:0m:21s (0h:0m:33s left)
+Iteration 50 / LogL: -5010.478 / Time: 0h:0m:21s (0h:0m:22s left)
+Iteration 60 / LogL: -5011.119 / Time: 0h:0m:21s (0h:0m:14s left)
+Iteration 70 / LogL: -5009.096 / Time: 0h:0m:21s (0h:0m:9s left)
+Iteration 80 / LogL: -5011.536 / Time: 0h:0m:21s (0h:0m:5s left)
+Iteration 90 / LogL: -5009.837 / Time: 0h:0m:22s (0h:0m:2s left)
+Iteration 100 / LogL: -5009.114 / Time: 0h:0m:22s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:22s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5009.093
+Optimal log-likelihood: -5009.092
+Rate parameters:  A-C: 4.16943  A-G: 25.64500  A-T: 4.68611  C-G: 4.52597  C-T: 44.91711  G-T: 1.00000
+Base frequencies:  A: 0.272  C: 0.206  G: 0.271  T: 0.251
+Gamma shape alpha: 0.179
+Parameters optimization took 1 rounds (0.004 sec)
+BEST SCORE FOUND : -5009.092
+
+Testing tree branches by SH-like aLRT with 10000 replicates...
+1.150 sec.
+Total tree length: 2.038
+
+Total number of iterations: 102
+CPU time used for tree search: 1.783 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.807 sec (0h:0m:1s)
+Total CPU time used: 22.931 sec (0h:0m:22s)
+Total wall-clock time used: 23.440 sec (0h:0m:23s)
+
+Analysis results written to: 
+  IQ-TREE report:                rpb2_mafft_trimal.fasta.iqtree
+  Maximum-likelihood tree:       rpb2_mafft_trimal.fasta.treefile
+  Likelihood distances:          rpb2_mafft_trimal.fasta.mldist
+  Screen log file:               rpb2_mafft_trimal.fasta.log
+
+Date and Time: Sun Apr 13 15:18:07 2025

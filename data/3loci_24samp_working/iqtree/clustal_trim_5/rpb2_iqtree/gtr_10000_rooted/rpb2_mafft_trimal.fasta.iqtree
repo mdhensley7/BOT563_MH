@@ -1,0 +1,158 @@
+IQ-TREE 2.4.0 built Feb 12 2025
+
+Input file name: rpb2_mafft_trimal.fasta
+Type of analysis: tree reconstruction
+Random seed number: 519293
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 24 sequences with 684 nucleotide sites
+Number of constant sites: 414 (= 60.5263% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 414 (= 60.5263% of all sites)
+Number of parsimony informative sites: 235
+Number of distinct site patterns: 294
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 4.1694
+  A-G: 25.6450
+  A-T: 4.6861
+  C-G: 4.5260
+  C-T: 44.9171
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.272
+  pi(C) = 0.2063
+  pi(G) = 0.2708
+  pi(T) = 0.2509
+
+Rate matrix Q:
+
+  A   -0.8825   0.08451    0.6825    0.1155
+  C    0.1114    -1.339    0.1204     1.107
+  G    0.6854   0.09174   -0.8018   0.02466
+  T    0.1252    0.9104   0.02661    -1.062
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.1792
+
+ Category  Relative_rate  Proportion
+  1         0.0002384      0.25
+  2         0.02271        0.25
+  3         0.3273         0.25
+  4         3.65           0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5009.0920 (s.e. 204.4457)
+Unconstrained log-likelihood (without tree): -2725.4049
+Number of free parameters (#branches + #model parameters): 54
+Akaike information criterion (AIC) score: 10126.1840
+Corrected Akaike information criterion (AICc) score: 10135.6276
+Bayesian information criterion (BIC) score: 10370.6938
+
+Total tree length (sum of branch lengths): 2.0383
+Sum of internal branch lengths: 0.8298 (40.7121% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0015) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'KT833822.1' is drawn at root
+Numbers in parentheses are SH-aLRT support (%)
+
+                                               +-------JQ031110.1
+                              +----------------| (99.8)
+                              |                |     +----JQ031112.1
+                              |                |  +--| (86.3)
+                              |                |  |  +--KR824789.1
+                              |                +--| (42.4)
+                              |                   +-----------MH485965.1
+              +---------------| (99.6)
+              |               |                         +--MH485858.1
+              |               |                      +--| (94.5)
+              |               |                      |  +--MH485886.1
+              |               |                   +--| (92.3)
+              |               |                   |  +--MH485930.1
+              |               |                +--| (73)
+              |               |                |  +--MH485875.1
+              |               |   +------------| (99.5)
+              |               |   |            +---MH486021.1
+              |               +---| (40.2)
+              |                   +-------------MH486052.1
+           +--| (17.2)
+           |  +------------------KJ466647.1
+       +---| (88.8)
+       |   |       +-----------MH485905.1
+       |   +-------| (98.2)
+       |           +---MH485963.1
+    +**| (0)
+    |  |     +--MH485864.1
+    |  |  +--| (96.8)
+    |  |  |  +--MH485932.1
+    |  +--| (84.7)
+    |     +-----MH486298.1
++---| (75)
+|   |      +-----MH485937.1
+|   +------| (98.4)
+|          |          +--MH485938.1
+|          |       +--| (87.5)
+|          |       |  +--MH485948.1
+|          +-------| (99.8)
+|                  +--MH485979.1
+|
+|            +--KJ466600.1
++------------| (98.2)
+|            |  +--KJ466607.1
+|            +--| (87.5)
+|               +--KJ466664.1
+|
++---------------------------------------------------KT833822.1
+
+Tree in newick format:
+
+(((((((JQ031110.1:0.0589843619,((JQ031112.1:0.0374052412,KR824789.1:0.0173873051)86.3:0.0138432602,MH485965.1:0.0898305035)42.4:0.0113379352)99.8:0.1191128442,(((((MH485858.1:0.0026478907,MH485886.1:0.0025372125)94.5:0.0086396058,MH485930.1:0.0096383735)92.3:0.0108558827,MH485875.1:0.0131673082)73:0.0062974234,MH486021.1:0.0307782271)99.5:0.0967477713,MH486052.1:0.1032314418)40.2:0.0327293719)99.6:0.1143327627,KJ466647.1:0.1356908559)17.2:0.0190254525,(MH485905.1:0.0853429797,MH485963.1:0.0335333662)98.2:0.0595558401)88.8:0.0290647364,((MH485864.1:0.0135519863,MH485932.1:0.0161129769)96.8:0.0224191672,MH486298.1:0.0441401011)84.7:0.0155075878)0:0.0010416683,(MH485937.1:0.0484845254,((MH485938.1:0.0225644639,MH485948.1:0.0135962405)87.5:0.0101907826,MH485979.1:0.0217916262)99.8:0.0611267499)98.4:0.0491501782)75:0.0343306902,(KJ466600.1:0.0173178839,(KJ466607.1:0.0138489790,KJ466664.1:0.0098495474)87.5:0.0227172417)98.2:0.0918004180,KT833822.1:0.3670230125);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t rpb2_mafft_trimal.fasta.treefile -m "GTR{4.16943,25.645,4.68611,4.52597,44.9171}+F{0.271996,0.206271,0.270816,0.250916}+G4{0.17921}" --length 684
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s rpb2_mafft_trimal.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s rpb2_mafft_trimal.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Apr 13 15:18:07 2025
+Total CPU time used: 22.931 seconds (0h:0m:22s)
+Total wall-clock time used: 23.4419 seconds (0h:0m:23s)
+
