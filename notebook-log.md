@@ -565,7 +565,7 @@ end;
 - Append to .nex file using
 
 ```shell
-cat lsu_aligned_clustal.nex mbblock_wolfe.txt > lsu_wolfe_mb.nex
+cat lsu_aligned_clustal.nex mrbblock_wolfe.txt > lsu_wolfe_mb.nex
 ```
 
 - Run mrbayes
@@ -622,6 +622,10 @@ iqtree2 -s tef1a_mafft_trimal.fasta -o KT833822.1 -m GTR+G -alrt 10000 -nt AUTO 
 
 #### ASTRAL
 
+| Software | Description | Strengths | Weaknesses | Assumptions | My Choices |
+| -------- | ----------- | --------- | ---------- | ----------- | ---------- |
+| ASTRAL | Takes maximum likelihood gene trees and creates a species tree that is statistically consistent with the multispecies coalescent model |  1. Is not computationally expensive and can be scaled to data sets with 100+ taxa and numerous genes <p> 2. Has excellent accuracy comparable to other leading coalescent methods (BUCKy) </p>  | 1. ASTRAL is not super accurate when used in its default mode. <p> 2. Bootstrap ML gene trees are likely not the best gene trees to feed to ASTRAL. BestML is recommended | Assumes the gene trees are accurate | -r (bootstrap replicates) = 1000 <p> -q scores the species tree created </p>|
+
 My iqtree trees all are labelled by accession numbers which means ASTRAL will not read them as coming from the same taxa. Thus I need to go back and rename all the tips of each tree to have the species name.  
 
 ##### This part is code I tried to work to get the tips to change on R. It didn't work so I am keeping it to toy around with later but no good
@@ -642,8 +646,8 @@ species_data <- read.csv("/Users/hensley/Desktop/BOT563/BOT563_MH/data/3loci_24s
 selected_data <- species_data[, c("species", "lsu")] #Specifies the columns I want to use in the .csv
 species_names <- setNames(selected_data$species, selected_data$lsu) #Creates the mapping of species names to lsu accession numbers
 tree$tip.label <- sapply(tree$tip.label, function(x) species_names[[x]])
-
 ```
+
 ##### Instead, I figured out a python script where you can input an aligned fasta file and it will output the same file but the title of sequences will be the species names rather than the accession #s
 
 Just tinker with rename_tool.py to make sure it is locating correct file and mapping to correct column in the .csv file
@@ -802,4 +806,23 @@ java -jar astral.5.7.8.jar -i 3loci_concat_9.treefile -o 3loci_astral_9.treefile
 
 I do think the 90% threshold ultimately produced a cleaner tree but I have no idea if it is a more accurate representation or not.
 
-### - MAFFT with Trimal at 90% threshold
+### 9.2 - Mr. Bayes run with clustalw alignment and trim at 90%
+
+First thing's first, we need to convert the alignment file from a .fasta to a .nex
+
+```shell
+cd /Users/hensley/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/alignments/lsu
+conda install seqmagick #make sure you have it
+seqmagick convert --output-format nexus --alphabet dna lsu_clustal_spname_9.fasta lsu_clustal_spname_9.nex
+```
+Already have a .txt file with the parameters I want to use so I moved the .nex file created above into my mr bayes folder where the .txt file is found. Then I used the code below to append the .txt file to the bottom of the .nex file
+
+```shell
+cd /Users/hensley/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/mrbayes/lsu_mrb/mb_wolfe
+cat lsu_clustal_spname_9.nex mrbblock_wolfe.txt > lsu_wolfe_mb_spname.nex
+```
+run it!
+
+```shell
+mb lsu_wolfe_mb_spname.nex
+```
