@@ -164,12 +164,19 @@ mv fasta /mnt/c/Users/Michael/Desktop/BOT563/BOT563_MH/data/cui_am5_working
 
 ### From this point, I stick with only using the nrlsu data for class homework
 
-## 2 revised - A better way of organizing data
+## 2 REVISED - A better way of organizing data
 
 Really, we want a .csv file with the correct information as a means of organizing taxa and their accession numbers  
 This allows the ability to automate further down the line when we need to analyze loci together
 
-For this project, am3_loci.csv is the file containing the species name and the accession numbers for the loci LSU, TEF1a, RPB2
+For this project, am3_loci.csv is the file containing the species name and the accession numbers for the loci LSU, TEF1a, RPB2.  
+It is found in the below directory
+
+```shell
+cd /Users/hensley/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working
+```
+This file was used to generate the trees in parts 8 an 9
+
 
 ## 3 - Aligning the sequences
 
@@ -701,13 +708,13 @@ I just changed the loci names in the tool after every use to make sure each loci
 ```shell
 #Paths to renamed alignment files
 #lsu
-~/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/alignments/lsu/lsu_clustal_spname.fasta
+cd ~/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/alignments/lsu/lsu_clustal_spname.fasta
 
 #rpb2
-~/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/alignments/rpb2/rpb2_clustal_spname.fasta
+cd ~/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/alignments/rpb2/rpb2_clustal_spname.fasta
 
 #tef1a
-~/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/alignments/tef1a/tef1a_clustal_spname.fasta
+cd ~/Desktop/BOT563/BOT563_MH/data/3loci_24samp_working/alignments/tef1a/tef1a_clustal_spname.fasta
 ```
 ### iqtree
 
@@ -762,8 +769,9 @@ trimal -in lsu_clustal.fasta -out lsu_clustal_trim_9.fasta -gt 0.9
 trimal -in rpb2_clustal.fasta -out rpb2_clustal_trim_9.fasta -gt 0.9
 trimal -in tef1a_clustal.fasta -out tef1a_clustal_trim_9.fasta -gt 0.9
 ```
+Renamed each sequence in each alignment to the species name using the rename_tool.py found in "data" folder.  
+The output alignment files are named with species and were the files used below.
 
-Renamed each sequence in each alignment to the species name using the rename_tool.py found in "data" folder
 
 #### iqtree
 
